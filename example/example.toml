@@ -1,7 +1,7 @@
 # an example for bigtrack
 
-[hub."exampleHub"]
-shortLabel = "exampleHub"
+[hub."hubExample"]
+shortLabel = "hubExample"
 longLabel = "The trackhub collection for example"
 email = "my email"
 _genomes = ["exampleGenome"]

@@ -18,6 +18,8 @@ class HubCore:
 
     def __init__(
             self,
+            force_overwrite: bool = False,
+            dry_run: bool = False,
     ) -> None:
 
         self.info = None
@@ -27,6 +29,9 @@ class HubCore:
         self.groups: Dict[str, Group] = dict()
         self.tracks: Dict[str, Track] = dict()
         self.job_groups: List[JobGroup] = list()
+
+        self.force_overwrite: bool = force_overwrite
+        self.dry_run: bool = dry_run
 
     def parse_configuration_file(
             self,
@@ -48,7 +53,6 @@ class HubCore:
 
     def build_hub(
             self,
-            force_overwrite: bool = False,
     ) -> None:
 
         # parse hub
@@ -57,14 +61,16 @@ class HubCore:
         self.hub = Hub(identifier=self.hub_identifier, **extract_public_attrs(self.info["hub"][self.hub_identifier]))
 
         # check directory
-        if os.path.exists(self.hub_identifier) and not force_overwrite:
+        if os.path.exists(self.hub_identifier) and not self.force_overwrite:
             raise FileExistsError(f"{self.hub_identifier} already exists.")
-        os.makedirs(self.hub_identifier, exist_ok=True)
+        if not self.dry_run:
+            os.makedirs(self.hub_identifier, exist_ok=True)
 
         # parse genomes
         for genome_identifier in self.info["genomes"]:
             self.genomes[genome_identifier] = Genome(identifier=genome_identifier, hub_identifier=self.hub_identifier, path=self.info["genomes"][genome_identifier]["_path"], **extract_public_attrs(self.info["genomes"][genome_identifier]))
-            os.makedirs(os.path.join(self.hub_identifier, genome_identifier), exist_ok=True)
+            if not self.dry_run:
+                os.makedirs(os.path.join(self.hub_identifier, genome_identifier), exist_ok=True)
 
         # link hub and genomes
         if "_genomes" in self.info["hub"][self.hub_identifier]:
@@ -97,6 +103,8 @@ class HubCore:
                     genome_identifier = g
             self.tracks[track_identifier] = Track(identifier=track_identifier, hub_identifier=self.hub_identifier, genome_identifier=genome_identifier, path=track_info["_path"], as_path=track_info.get("_as", None), **extract_public_attrs(track_info))
             self.groups[group_identifier].add_track(self.tracks[track_identifier])
+
+        self.hub.generate(self.dry_run)
 
     def fetch_jobs(
             self,
