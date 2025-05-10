@@ -2,7 +2,22 @@
 
 import os
 import re
-from typing import Optional, Any, List, Tuple, Dict, Callable
+from typing import Optional, Any, List, Tuple, Dict, Callable, TextIO
+
+
+def print_ascii_art(
+        file: Optional[TextIO] = None,
+) -> None:
+
+    print(r"         ________  ___  ________ _________  ________  ________  ________  ___  __        ", file=file)
+    print(r"        |\   __  \|\  \|\   ____\\___   ___\\   __  \|\   __  \|\   ____\|\  \|\  \      ", file=file)
+    print(r"        \ \  \|\ /\ \  \ \  \___\|___ \  \_\ \  \|\  \ \  \|\  \ \  \___|\ \  \/  /|_    ", file=file)
+    print(r"         \ \   __  \ \  \ \  \  ___  \ \  \ \ \   _  _\ \   __  \ \  \    \ \   ___  \   ", file=file)
+    print(r"          \ \  \|\  \ \  \ \  \|\  \  \ \  \ \ \  \\  \\ \  \ \  \ \  \____\ \  \\ \  \  ", file=file)
+    print(r"           \ \_______\ \__\ \_______\  \ \__\ \ \__\\ _\\ \__\ \__\ \_______\ \__\\ \__\ ", file=file)
+    print(r"            \|_______|\|__|\|_______|   \|__|  \|__|\|__|\|__|\|__|\|_______|\|__| \|__| ", file=file)
+    print("", file=file)
+    print("", file=file)
 
 
 def prepend_to_path(

@@ -32,6 +32,12 @@ class TrackJob:
 
         return self.__repr__()
 
+    def execute(
+            self,
+    ) -> None:
+
+        self.func(**self.arguments)
+
 
 class TrackJobGroup:
 
@@ -62,7 +68,7 @@ class TrackJobGroup:
     ) -> str:
 
         for job in self.jobs:
-            job.func(**job.arguments)
+            job.execute()
 
         return self.name
 

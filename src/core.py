@@ -18,10 +18,12 @@ class HubCore:
 
     def __init__(
             self,
+            config_path: str,
             force_overwrite: bool = False,
             dry_run: bool = False,
     ) -> None:
 
+        self.config_path = config_path
         self.info = None
         self.hub: Hub = None
         self.hub_identifier: str = ""
@@ -32,6 +34,12 @@ class HubCore:
 
         self.force_overwrite: bool = force_overwrite
         self.dry_run: bool = dry_run
+
+        self.parse_configuration_file(self.config_path)
+        self.build_hub()
+        self.print_info()
+        self.fetch_jobs()
+        self.print_jobs()
 
     def parse_configuration_file(
             self,
@@ -106,11 +114,34 @@ class HubCore:
 
         self.hub.generate(self.dry_run)
 
+    def print_info(
+            self,
+            file: Optional[TextIO] = None,
+    ) -> None:
+
+        print("💡 Configuration file has been loaded:", file=file)
+
+        print("Hub structure:", file=file)
+        print(f"[ Hub ] {self.hub_identifier}", file=file)
+        for genome_identifier in self.hub.genomes:
+            print(f"└── [ Genome ] {genome_identifier}", file=file)
+            for group_identifier in self.genomes[genome_identifier].groups:
+                print(f"    └── [ Group ] {group_identifier}", file=file)
+                for track_identifier in self.groups[group_identifier].tracks:
+                    print(f"        └── [ {self.groups[group_identifier].tracks[track_identifier].__class__.__name__} ] {track_identifier}", file=file)
+        
+        print("", file=file)
+        print(f"Total genomes: {len(self.genomes)}", file=file)
+        print(f"Total groups: {len(self.groups)}", file=file)
+        print(f"Total tracks: {len(self.tracks)}", file=file)
+        print(u"_" * os.get_terminal_size().columns, file=file)
+        print("", file=file)
+
     def fetch_jobs(
             self,
     ) -> None:
 
-        self.job_groups = list()  # empty jobs
+        self.job_groups = list()  # empty job group
         job_group_id = 0
 
         for genome_identifier in self.genomes:
@@ -129,7 +160,7 @@ class HubCore:
         for job_group in self.job_groups:
             for job in job_group:
                 print(f"Group {job_group.name}\t{job}", file=file)
-        print(u"\u2500" * os.get_terminal_size().columns, file=file)
+        print(u"_" * os.get_terminal_size().columns, file=file)
         print("", file=file)
 
     def execute_jobs(
@@ -145,6 +176,7 @@ class HubCore:
             ) as pbar:
 
                 results = pool.imap_unordered(_execute_job_group, self.job_groups, chunksize=1)
+                tqdm.write("💡 Job noticeboard:")
 
                 for result in results:
                     tqdm.write(f"✅ Finished: Group {result}")
