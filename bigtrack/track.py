@@ -22,7 +22,7 @@ class Track(HubComponent):
         s.append("")
         if self.parent is None:
             del s[self.required_keys.index("parent")]
-        return "\n".join(s)
+        return "\n".join(s) + "\n"
         
     def add_parent(self, parent: "Track"):
 
@@ -30,7 +30,7 @@ class Track(HubComponent):
         self.kwargs["parent"] = parent.kwargs["track"]
         parent.children.append(self)
     
-    def add_children(self, child: "Track"):
+    def add_child(self, child: "Track"):
 
         child.parent = self
         child.kwargs["parent"] = self.kwargs["track"]

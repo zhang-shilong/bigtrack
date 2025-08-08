@@ -12,7 +12,7 @@ class Genome(HubComponent):
         "trackDb": "trackDb.txt",
         "groups": "groups.txt",
     }
-    required_keys = ["genome", "trackDb","groups", "organism", "scientificName"]
+    required_keys = ["genome", "trackDb", "groups", "organism", "scientificName"]
 
     def __init__(self, **kwargs):
 
@@ -51,7 +51,7 @@ class Genome(HubComponent):
         # generate groups.txt
         with open(os.path.join(target_path, self.kwargs["groups"]), "w") as groups_f:
             for group in self.groups:
-                groups_f.write(group)
+                groups_f.write(group.format())
         
         # generate trackDb.txt
         with open(os.path.join(target_path, self.kwargs["trackDb"]), "w") as trackDb_f:

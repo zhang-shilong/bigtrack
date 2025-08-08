@@ -9,7 +9,7 @@ class SuperTrack(Track):
         "superTrack": "on",
         "parent": None,
     }
-    required_keys = ["track", "superTrack", "parent", "shortLabel", "longLabel", "type"]
+    required_keys = ["track", "superTrack", "parent", "shortLabel", "longLabel"]
 
     def __init__(self, **kwargs):
 

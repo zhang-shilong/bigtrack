@@ -23,7 +23,7 @@ class HubComponent(object):
         for k, v in self.kwargs.items():
             if k.startswith("_"): continue
             if k not in self.required_keys:
-                s.append(indent_level * 4 * " " f"{k} {v}")
+                s.append(indent_level * 4 * " " + f"{k} {v}")
 
         return s
 
@@ -31,7 +31,7 @@ class HubComponent(object):
 
         s = self._print_kwargs(indent_level=indent_level)
         s.append("")
-        return "\n".join(s)
+        return "\n".join(s) + "\n"
 
     def _auto_complete_kwargs(self):
 

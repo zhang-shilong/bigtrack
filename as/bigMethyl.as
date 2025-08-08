@@ -1,0 +1,22 @@
+table bigMethyl
+"bigMethyl bedMethyl"
+(
+    string   chrom;            "Reference sequence chromosome or scaffold"
+    uint     chromStart;       "Start position in chrom"
+    uint     chromEnd;         "End position in chrom"
+    string   name;             "dbSNP Reference SNP (rs) identifier or :"
+    uint     score;            "Score from 0-1000, derived from p-value"
+    char[1]  strand;           "Unused.  Always '.'"
+    uint     thickStart;       "Start position in chrom"
+    uint     thickEnd;         "End position in chrom"
+    uint     color;            "Red (positive effect) or blue (negative). Brightness reflects pvalue"
+    string   nValidCov;        "Valid Coverage"
+    double   percMod;          "Percent Modified"
+    uint     nMod;             "Number of calls with a modified base"
+    uint     nCanon;           "Number of calls with a canonical base"
+    uint     nOther;           "Number of calls with a modified base, other modification"
+    uint     nDelete;          "Number of reads with a deletion at this reference position"
+    uint     nFail;            "Number of calls where the probability of the call was below the threshold"
+    uint     nDiff;            "Number of reads with a base other than the canonical base for this modification"
+    uint     nNoCall;          "Number of reads aligned to this reference position, with the correct canonical base, but without a base modification call"
+)
