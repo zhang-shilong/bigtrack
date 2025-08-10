@@ -1,0 +1,106 @@
+track macaque_chains
+superTrack on
+shortLabel Macaque chains
+longLabel Macaque chains
+type bigChain
+group compGeno
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-other_assemblies.html
+
+    track macaque_chains_Mmul_10
+    parent macaque_chains
+    shortLabel Mmul_10
+    longLabel Macaque chain alignments to Mmul_10
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-Mmul_10.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-Mmul_10.swapped.link.bigbed
+    visibility pack
+
+    track macaque_chains_T2T-MFA8v1.1
+    parent macaque_chains
+    shortLabel T2T-MFA8v1.1
+    longLabel Macaque chain alignments to T2T-MFA8v1.1
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MFA8v1.1.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MFA8v1.1.swapped.link.bigbed
+    visibility pack
+
+    track macaque_chains_rheMacS_1.0
+    parent macaque_chains
+    shortLabel rheMacS_1.0
+    longLabel Macaque chain alignments to rheMacS_1.0
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-rheMacS_1.0.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-rheMacS_1.0.swapped.link.bigbed
+    visibility pack
+
+track primate_chains
+superTrack on
+shortLabel Primate chains
+longLabel Primate chains
+type bigChain
+group compGeno
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-other_assemblies.html
+
+    track primate_chains_T2T-CHM13v2.0
+    parent primate_chains
+    shortLabel T2T-CHM13v2.0
+    longLabel Primate chain alignments to T2T-CHM13v2.0
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-CHM13v2.0.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-CHM13v2.0.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mGorGor1_v2.0_pri
+    parent primate_chains
+    shortLabel mGorGor1_v2.0_pri
+    longLabel Primate chain alignments to mGorGor1_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mGorGor1_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mGorGor1_v2.0_pri.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mPanPan1_v2.0_pri
+    parent primate_chains
+    shortLabel mPanPan1_v2.0_pri
+    longLabel Primate chain alignments to mPanPan1_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPanPan1_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPanPan1_v2.0_pri.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mPanTro3_v2.0_pri
+    parent primate_chains
+    shortLabel mPanTro3_v2.0_pri
+    longLabel Primate chain alignments to mPanTro3_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPanTro3_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPanTro3_v2.0_pri.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mPonAbe1_v2.0_pri
+    parent primate_chains
+    shortLabel mPonAbe1_v2.0_pri
+    longLabel Primate chain alignments to mPonAbe1_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPonAbe1_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPonAbe1_v2.0_pri.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mPonPyg2_v2.0_pri
+    parent primate_chains
+    shortLabel mPonPyg2_v2.0_pri
+    longLabel Primate chain alignments to mPonPyg2_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPonPyg2_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mPonPyg2_v2.0_pri.swapped.link.bigbed
+    visibility pack
+
+    track primate_chains_mSymSyn1_v2.0_pri
+    parent primate_chains
+    shortLabel mSymSyn1_v2.0_pri
+    longLabel Primate chain alignments to mSymSyn1_v2.0_pri
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mSymSyn1_v2.0_pri.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-mSymSyn1_v2.0_pri.swapped.link.bigbed
+    visibility pack
+

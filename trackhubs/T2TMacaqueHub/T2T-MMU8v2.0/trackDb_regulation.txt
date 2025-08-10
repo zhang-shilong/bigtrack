@@ -1,0 +1,38 @@
+track cpg_islands
+shortLabel CpG islands
+longLabel CpG islands
+type bigBed 4 +
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.cpg_islands.bigbed
+group regulation
+visibility dense
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cpg_islands.html
+
+track methylation
+superTrack on show
+shortLabel Methylation
+longLabel Methylation
+group regulation
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/methylation-dorado.html
+
+    track methylated_cpgs
+    parent methylation
+    shortLabel Methylated CpGs %
+    longLabel Methylated CpGs %, ONT R10.4.1, traditional preset
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.AXM.Nanopore_R10_5mCG.ge5.bigwig
+    color 29,29,141
+    visibility full
+    maxHeightPixels 128:36:16
+    graphTypeDefault Bar
+    gridDefault OFF
+    windowingFunction Mean
+    viewLimits 0:100
+
+    track cpg_bigmethyl
+    parent methylation
+    shortLabel CpG methylation
+    longLabel CpG methylation, ONT R10.4.1, traditional preset
+    type bigMethyl
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.AXM.Nanopore_R10.ge5.bigMethyl
+    visibility hide
+

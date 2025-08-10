@@ -1,0 +1,141 @@
+track cytoBandIdeo
+shortLabel Chromosome Band (Ideogram)
+longLabel Ideogram for Orientation
+type bigBed 4 +
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.cytobands.bigbed
+group map
+
+track alpha_sat
+shortLabel Alpha satellites
+longLabel Alpha satellites
+type bigBed 9
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.alpha_satellites.bigbed
+itemRgb On
+labelFields none
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker-alpha_satellites.html
+
+track rDNA
+shortLabel rDNA models
+longLabel rDNA models
+type bigBed 3
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.rDNA.bigbed
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/rDNA_models.html
+
+track base_pct
+compositeTrack on
+shortLabel Base percent
+longLabel Base percent
+type bigWig 0 100
+group map
+visibility full
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+color 0,0,0
+altColor 128,128,128
+viewLimits 30:70
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/base_percent.html
+
+    track gc_pct
+    parent base_pct
+    shortLabel GC%
+    longLabel GC percent in 50-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.pct_GC_w50.bigwig
+    visibility full
+
+    track at_pct
+    parent base_pct
+    shortLabel AT%
+    longLabel AT percent in 50-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.pct_AT_w50.bigwig
+    visibility hide
+
+track mappability
+compositeTrack on
+shortLabel Mappability
+longLabel Mappability
+type bigWig
+group map
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+viewLimits 0:1
+visibility full
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/mappability-genmap.html
+
+    track mappability_k21
+    parent mappability
+    shortLabel k=21, e=0
+    longLabel Mappability (k=21, e=0)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.k21_e0_mappability.bigwig
+    color 128,104,193
+    visibility full
+
+    track mappability_k31
+    parent mappability
+    shortLabel k=31, e=0
+    longLabel Mappability (k=31, e=0)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.k31_e0_mappability.bigwig
+    color 128,104,193
+    visibility hide
+
+track microsatellites
+compositeTrack on
+shortLabel Microsatellites
+longLabel Microsatellites
+type bigWig
+group map
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+viewLimits 0:100
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/microsatellites.html
+
+    track microsatellites_GA
+    parent microsatellites
+    shortLabel GA Microsatellites
+    longLabel GA Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.microsatellite_GA_w128.bigwig
+    color 83,105,255
+    visibility full
+
+    track microsatellites_TC
+    parent microsatellites
+    shortLabel TC Microsatellites
+    longLabel TC Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.microsatellite_TC_w128.bigwig
+    color 102,0,102
+    visibility full
+
+    track microsatellites_GC
+    parent microsatellites
+    shortLabel GC Microsatellites
+    longLabel GC Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.microsatellite_GC_w128.bigwig
+    color 188,115,19
+    visibility full
+
+    track microsatellites_AT
+    parent microsatellites
+    shortLabel AT Microsatellites
+    longLabel AT Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.microsatellite_AT_w128.bigwig
+    color 51,102,0
+    visibility full
+

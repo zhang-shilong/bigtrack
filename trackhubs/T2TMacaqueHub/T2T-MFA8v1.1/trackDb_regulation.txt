@@ -1,0 +1,30 @@
+track cpg_islands
+shortLabel CpG islands
+longLabel CpG islands
+type bigBed 4 +
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.CpG_islands.bigbed
+group regulation
+visibility dense
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cpg_islands.html
+
+track methylation
+superTrack on show
+shortLabel Methylation
+longLabel Methylation
+group regulation
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/methylation-nanopolish.html
+
+    track methylated_cpgs
+    parent methylation
+    shortLabel Methylated CpGs %
+    longLabel Methylated CpGs %, Nanopolish v0.14.0
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.ONT_methylation.nanopolish_v0.14.0.bigwig
+    color 29,29,141
+    visibility full
+    maxHeightPixels 128:36:16
+    graphTypeDefault Bar
+    gridDefault OFF
+    windowingFunction Mean
+    viewLimits 0:100
+

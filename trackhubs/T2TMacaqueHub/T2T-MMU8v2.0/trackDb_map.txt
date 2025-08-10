@@ -1,0 +1,184 @@
+track cytoBandIdeo
+shortLabel Chromosome Band (Ideogram)
+longLabel Ideogram for Orientation
+type bigBed 4 +
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.cytobands.bigbed
+group map
+
+track alpha_sat
+shortLabel Alpha satellites
+longLabel Alpha satellites
+type bigBed 9
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.alpha_satellite.bigbed
+itemRgb On
+labelFields none
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker-alpha_satellites.html
+
+track rDNA
+shortLabel rDNA models
+longLabel rDNA models
+type bigBed 3
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.rDNA.bigbed
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/rDNA_models.html
+
+track base_pct
+compositeTrack on
+shortLabel Base percent
+longLabel Base percent
+type bigWig 0 100
+group map
+visibility full
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+color 0,0,0
+altColor 128,128,128
+viewLimits 30:70
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/base_percent.html
+
+    track gc_pct
+    parent base_pct
+    shortLabel GC%
+    longLabel GC percent in 50-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.pct_GC_w50.bigwig
+    visibility full
+
+    track at_pct
+    parent base_pct
+    shortLabel AT%
+    longLabel AT percent in 50-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.pct_AT_w50.bigwig
+    visibility hide
+
+track mappability
+compositeTrack on
+shortLabel Mappability
+longLabel Mappability
+type bigWig
+group map
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+viewLimits 0:1
+visibility full
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/mappability-genmap.html
+
+    track mappability_k21
+    parent mappability
+    shortLabel k=21, e=0
+    longLabel Mappability (k=21, e=0)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.k21_e0_mappability.bigwig
+    color 128,104,193
+    visibility full
+
+    track mappability_k31
+    parent mappability
+    shortLabel k=31, e=0
+    longLabel Mappability (k=31, e=0)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.k31_e0_mappability.bigwig
+    color 128,104,193
+    visibility hide
+
+track microsatellites
+compositeTrack on
+shortLabel Microsatellites
+longLabel Microsatellites
+type bigWig
+group map
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+windowingFunction Mean
+viewLimits 0:100
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/microsatellites.html
+
+    track microsatellites_GA
+    parent microsatellites
+    shortLabel GA Microsatellites
+    longLabel GA Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.microsatellite_GA_w128.bigwig
+    color 83,105,255
+    visibility full
+
+    track microsatellites_TC
+    parent microsatellites
+    shortLabel TC Microsatellites
+    longLabel TC Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.microsatellite_TC_w128.bigwig
+    color 102,0,102
+    visibility full
+
+    track microsatellites_GC
+    parent microsatellites
+    shortLabel GC Microsatellites
+    longLabel GC Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.microsatellite_GC_w128.bigwig
+    color 188,115,19
+    visibility full
+
+    track microsatellites_AT
+    parent microsatellites
+    shortLabel AT Microsatellites
+    longLabel AT Microsatellites in 128-bp windows
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.microsatellite_AT_w128.bigwig
+    color 51,102,0
+    visibility full
+
+track newly_resolved
+compositeTrack on
+shortLabel Newly resolved regions
+longLabel Newly resolved regions
+type bigBed 3
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/newly_resolved_regions.html
+
+    track newly_resolved_Mmul_10
+    parent newly_resolved
+    shortLabel Mmul_10
+    longLabel Newly resolved regions to Mmul_10
+    type bigBed 3
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/non_syntenic_regions/non_syntenic_regions.Mmul_10.bigbed
+    color 136,136,136
+    visibility pack
+
+    track newly_resolved_rheMacS
+    parent newly_resolved
+    shortLabel rheMacS_1.0
+    longLabel Newly resolved regions to rheMacS_1.0
+    type bigBed 3
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/non_syntenic_regions/non_syntenic_regions.rheMacS_1.0.bigbed
+    color 136,136,136
+    visibility pack
+
+track version_chains
+superTrack on
+shortLabel Version chains
+longLabel Version chains
+type bigChain
+group map
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-versions.html
+
+    track version_chains_T2T-MMU8v1.0
+    parent version_chains
+    shortLabel T2T-MMU8v1.0
+    longLabel Version chain alignments to T2T-MMU8v1.0
+    type bigChain
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MMU8v1.0.swapped.bigchain.bigbed
+    linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MMU8v1.0.swapped.link.bigbed
+    visibility pack
+

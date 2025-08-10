@@ -1,0 +1,3470 @@
+track windowmasker
+shortLabel WindowMasker + SDust
+longLabel Genomic intervals masked by WindowMasker + SDust
+type bigBed 3
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.WindowMasker.bigbed
+group varRep
+visibility hide
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/windowmasker_sdust.html
+
+track longdust
+shortLabel LongDust
+longLabel Genomic intervals masked by LongDust
+type bigBed 3
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.longdust.bigbed
+group varRep
+visibility hide
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/longdust.html
+
+track trf
+shortLabel Tandem repeats
+longLabel Simple tandem repeats by TRF
+type bigBed 4
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.TRF_motifs.bigbed
+group varRep
+visibility hide
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/tandem_repeats-trf.html
+
+track sd
+shortLabel Segmental duplications
+longLabel Segmental duplications by SEDEF
+type bigBed 9 +
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.SDs.bigbed
+itemRgb On
+group varRep
+visibility pack
+maxItems 100000
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/segmental_duplications-sedef.html
+
+track repeatmasker
+shortLabel RepeatMasker
+longLabel RepeatMasker repetitive elements
+type bigRmsk
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.RepeatMasker.bigbed
+visibility pack
+group varRep
+maxWindowToDraw 5000000
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker.html
+
+track cnv_mfa
+compositeTrack on
+shortLabel CN of crab-eating macaques
+longLabel Copy number estimation for crab-eating macaques
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_mfa_MFA0214
+    parent cnv_mfa
+    shortLabel MFA0214 CN WSSD
+    longLabel MFA0214 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0214.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA157
+    parent cnv_mfa
+    shortLabel MFA157 CN WSSD
+    longLabel MFA157 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA157.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA683
+    parent cnv_mfa
+    shortLabel MFA683 CN WSSD
+    longLabel MFA683 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA683.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0251
+    parent cnv_mfa
+    shortLabel MFA0251 CN WSSD
+    longLabel MFA0251 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0251.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA16
+    parent cnv_mfa
+    shortLabel MFA16 CN WSSD
+    longLabel MFA16 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA16.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA746
+    parent cnv_mfa
+    shortLabel MFA746 CN WSSD
+    longLabel MFA746 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA746.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0334
+    parent cnv_mfa
+    shortLabel MFA0334 CN WSSD
+    longLabel MFA0334 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0334.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA160135
+    parent cnv_mfa
+    shortLabel MFA160135 CN WSSD
+    longLabel MFA160135 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA160135.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA768
+    parent cnv_mfa
+    shortLabel MFA768 CN WSSD
+    longLabel MFA768 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA768.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0345
+    parent cnv_mfa
+    shortLabel MFA0345 CN WSSD
+    longLabel MFA0345 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0345.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA160383
+    parent cnv_mfa
+    shortLabel MFA160383 CN WSSD
+    longLabel MFA160383 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA160383.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA802
+    parent cnv_mfa
+    shortLabel MFA802 CN WSSD
+    longLabel MFA802 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA802.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0347
+    parent cnv_mfa
+    shortLabel MFA0347 CN WSSD
+    longLabel MFA0347 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0347.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA160485
+    parent cnv_mfa
+    shortLabel MFA160485 CN WSSD
+    longLabel MFA160485 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA160485.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA82
+    parent cnv_mfa
+    shortLabel MFA82 CN WSSD
+    longLabel MFA82 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA82.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0353
+    parent cnv_mfa
+    shortLabel MFA0353 CN WSSD
+    longLabel MFA0353 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0353.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA160563
+    parent cnv_mfa
+    shortLabel MFA160563 CN WSSD
+    longLabel MFA160563 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA160563.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA825
+    parent cnv_mfa
+    shortLabel MFA825 CN WSSD
+    longLabel MFA825 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA825.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0400
+    parent cnv_mfa
+    shortLabel MFA0400 CN WSSD
+    longLabel MFA0400 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0400.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA169
+    parent cnv_mfa
+    shortLabel MFA169 CN WSSD
+    longLabel MFA169 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA169.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA928
+    parent cnv_mfa
+    shortLabel MFA928 CN WSSD
+    longLabel MFA928 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA928.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0464
+    parent cnv_mfa
+    shortLabel MFA0464 CN WSSD
+    longLabel MFA0464 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0464.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA173
+    parent cnv_mfa
+    shortLabel MFA173 CN WSSD
+    longLabel MFA173 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA173.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA96
+    parent cnv_mfa
+    shortLabel MFA96 CN WSSD
+    longLabel MFA96 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA96.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0486
+    parent cnv_mfa
+    shortLabel MFA0486 CN WSSD
+    longLabel MFA0486 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0486.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA186
+    parent cnv_mfa
+    shortLabel MFA186 CN WSSD
+    longLabel MFA186 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA186.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA962
+    parent cnv_mfa
+    shortLabel MFA962 CN WSSD
+    longLabel MFA962 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA962.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0497
+    parent cnv_mfa
+    shortLabel MFA0497 CN WSSD
+    longLabel MFA0497 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0497.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA186ZAI
+    parent cnv_mfa
+    shortLabel MFA186ZAI CN WSSD
+    longLabel MFA186ZAI CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA186ZAI.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA963
+    parent cnv_mfa
+    shortLabel MFA963 CN WSSD
+    longLabel MFA963 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA963.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0505
+    parent cnv_mfa
+    shortLabel MFA0505 CN WSSD
+    longLabel MFA0505 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0505.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA191
+    parent cnv_mfa
+    shortLabel MFA191 CN WSSD
+    longLabel MFA191 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA191.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA964
+    parent cnv_mfa
+    shortLabel MFA964 CN WSSD
+    longLabel MFA964 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA964.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0522
+    parent cnv_mfa
+    shortLabel MFA0522 CN WSSD
+    longLabel MFA0522 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0522.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA2
+    parent cnv_mfa
+    shortLabel MFA2 CN WSSD
+    longLabel MFA2 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA2.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA965
+    parent cnv_mfa
+    shortLabel MFA965 CN WSSD
+    longLabel MFA965 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA965.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0713
+    parent cnv_mfa
+    shortLabel MFA0713 CN WSSD
+    longLabel MFA0713 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0713.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA237
+    parent cnv_mfa
+    shortLabel MFA237 CN WSSD
+    longLabel MFA237 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA237.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA966
+    parent cnv_mfa
+    shortLabel MFA966 CN WSSD
+    longLabel MFA966 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA966.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA080
+    parent cnv_mfa
+    shortLabel MFA080 CN WSSD
+    longLabel MFA080 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA080.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA289
+    parent cnv_mfa
+    shortLabel MFA289 CN WSSD
+    longLabel MFA289 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA289.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA970
+    parent cnv_mfa
+    shortLabel MFA970 CN WSSD
+    longLabel MFA970 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA970.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA10
+    parent cnv_mfa
+    shortLabel MFA10 CN WSSD
+    longLabel MFA10 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA10.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA336
+    parent cnv_mfa
+    shortLabel MFA336 CN WSSD
+    longLabel MFA336 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA336.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA971
+    parent cnv_mfa
+    shortLabel MFA971 CN WSSD
+    longLabel MFA971 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA971.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1000
+    parent cnv_mfa
+    shortLabel MFA1000 CN WSSD
+    longLabel MFA1000 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1000.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA344
+    parent cnv_mfa
+    shortLabel MFA344 CN WSSD
+    longLabel MFA344 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA344.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA972
+    parent cnv_mfa
+    shortLabel MFA972 CN WSSD
+    longLabel MFA972 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA972.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1001
+    parent cnv_mfa
+    shortLabel MFA1001 CN WSSD
+    longLabel MFA1001 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1001.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA355
+    parent cnv_mfa
+    shortLabel MFA355 CN WSSD
+    longLabel MFA355 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA355.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA973
+    parent cnv_mfa
+    shortLabel MFA973 CN WSSD
+    longLabel MFA973 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA973.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1003
+    parent cnv_mfa
+    shortLabel MFA1003 CN WSSD
+    longLabel MFA1003 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1003.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA362
+    parent cnv_mfa
+    shortLabel MFA362 CN WSSD
+    longLabel MFA362 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA362.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA974
+    parent cnv_mfa
+    shortLabel MFA974 CN WSSD
+    longLabel MFA974 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA974.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1004
+    parent cnv_mfa
+    shortLabel MFA1004 CN WSSD
+    longLabel MFA1004 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1004.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA380
+    parent cnv_mfa
+    shortLabel MFA380 CN WSSD
+    longLabel MFA380 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA380.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA975
+    parent cnv_mfa
+    shortLabel MFA975 CN WSSD
+    longLabel MFA975 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA975.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1005
+    parent cnv_mfa
+    shortLabel MFA1005 CN WSSD
+    longLabel MFA1005 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1005.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA395
+    parent cnv_mfa
+    shortLabel MFA395 CN WSSD
+    longLabel MFA395 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA395.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA976
+    parent cnv_mfa
+    shortLabel MFA976 CN WSSD
+    longLabel MFA976 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA976.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1006
+    parent cnv_mfa
+    shortLabel MFA1006 CN WSSD
+    longLabel MFA1006 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1006.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA444
+    parent cnv_mfa
+    shortLabel MFA444 CN WSSD
+    longLabel MFA444 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA444.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA978
+    parent cnv_mfa
+    shortLabel MFA978 CN WSSD
+    longLabel MFA978 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA978.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1007
+    parent cnv_mfa
+    shortLabel MFA1007 CN WSSD
+    longLabel MFA1007 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1007.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA454
+    parent cnv_mfa
+    shortLabel MFA454 CN WSSD
+    longLabel MFA454 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA454.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA980
+    parent cnv_mfa
+    shortLabel MFA980 CN WSSD
+    longLabel MFA980 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA980.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1008
+    parent cnv_mfa
+    shortLabel MFA1008 CN WSSD
+    longLabel MFA1008 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1008.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA457
+    parent cnv_mfa
+    shortLabel MFA457 CN WSSD
+    longLabel MFA457 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA457.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA981
+    parent cnv_mfa
+    shortLabel MFA981 CN WSSD
+    longLabel MFA981 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA981.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1010
+    parent cnv_mfa
+    shortLabel MFA1010 CN WSSD
+    longLabel MFA1010 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1010.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA469
+    parent cnv_mfa
+    shortLabel MFA469 CN WSSD
+    longLabel MFA469 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA469.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA982
+    parent cnv_mfa
+    shortLabel MFA982 CN WSSD
+    longLabel MFA982 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA982.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1011
+    parent cnv_mfa
+    shortLabel MFA1011 CN WSSD
+    longLabel MFA1011 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1011.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA494
+    parent cnv_mfa
+    shortLabel MFA494 CN WSSD
+    longLabel MFA494 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA494.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA983
+    parent cnv_mfa
+    shortLabel MFA983 CN WSSD
+    longLabel MFA983 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA983.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1012
+    parent cnv_mfa
+    shortLabel MFA1012 CN WSSD
+    longLabel MFA1012 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1012.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA513
+    parent cnv_mfa
+    shortLabel MFA513 CN WSSD
+    longLabel MFA513 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA513.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA985
+    parent cnv_mfa
+    shortLabel MFA985 CN WSSD
+    longLabel MFA985 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA985.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1013
+    parent cnv_mfa
+    shortLabel MFA1013 CN WSSD
+    longLabel MFA1013 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1013.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA521
+    parent cnv_mfa
+    shortLabel MFA521 CN WSSD
+    longLabel MFA521 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA521.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA986
+    parent cnv_mfa
+    shortLabel MFA986 CN WSSD
+    longLabel MFA986 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA986.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1014
+    parent cnv_mfa
+    shortLabel MFA1014 CN WSSD
+    longLabel MFA1014 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1014.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA53
+    parent cnv_mfa
+    shortLabel MFA53 CN WSSD
+    longLabel MFA53 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA53.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA987
+    parent cnv_mfa
+    shortLabel MFA987 CN WSSD
+    longLabel MFA987 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA987.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1015
+    parent cnv_mfa
+    shortLabel MFA1015 CN WSSD
+    longLabel MFA1015 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1015.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA534
+    parent cnv_mfa
+    shortLabel MFA534 CN WSSD
+    longLabel MFA534 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA534.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA988
+    parent cnv_mfa
+    shortLabel MFA988 CN WSSD
+    longLabel MFA988 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA988.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1016
+    parent cnv_mfa
+    shortLabel MFA1016 CN WSSD
+    longLabel MFA1016 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1016.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA535
+    parent cnv_mfa
+    shortLabel MFA535 CN WSSD
+    longLabel MFA535 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA535.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA989
+    parent cnv_mfa
+    shortLabel MFA989 CN WSSD
+    longLabel MFA989 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA989.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1017
+    parent cnv_mfa
+    shortLabel MFA1017 CN WSSD
+    longLabel MFA1017 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1017.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA556
+    parent cnv_mfa
+    shortLabel MFA556 CN WSSD
+    longLabel MFA556 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA556.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA990
+    parent cnv_mfa
+    shortLabel MFA990 CN WSSD
+    longLabel MFA990 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA990.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1021
+    parent cnv_mfa
+    shortLabel MFA1021 CN WSSD
+    longLabel MFA1021 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1021.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA565
+    parent cnv_mfa
+    shortLabel MFA565 CN WSSD
+    longLabel MFA565 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA565.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA991
+    parent cnv_mfa
+    shortLabel MFA991 CN WSSD
+    longLabel MFA991 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA991.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1022
+    parent cnv_mfa
+    shortLabel MFA1022 CN WSSD
+    longLabel MFA1022 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1022.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA566
+    parent cnv_mfa
+    shortLabel MFA566 CN WSSD
+    longLabel MFA566 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA566.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA992
+    parent cnv_mfa
+    shortLabel MFA992 CN WSSD
+    longLabel MFA992 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA992.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1023
+    parent cnv_mfa
+    shortLabel MFA1023 CN WSSD
+    longLabel MFA1023 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1023.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA582-1
+    parent cnv_mfa
+    shortLabel MFA582-1 CN WSSD
+    longLabel MFA582-1 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA582-1.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA993
+    parent cnv_mfa
+    shortLabel MFA993 CN WSSD
+    longLabel MFA993 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA993.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1024
+    parent cnv_mfa
+    shortLabel MFA1024 CN WSSD
+    longLabel MFA1024 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1024.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA610
+    parent cnv_mfa
+    shortLabel MFA610 CN WSSD
+    longLabel MFA610 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA610.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA994
+    parent cnv_mfa
+    shortLabel MFA994 CN WSSD
+    longLabel MFA994 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA994.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1025
+    parent cnv_mfa
+    shortLabel MFA1025 CN WSSD
+    longLabel MFA1025 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1025.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA615
+    parent cnv_mfa
+    shortLabel MFA615 CN WSSD
+    longLabel MFA615 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA615.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA995
+    parent cnv_mfa
+    shortLabel MFA995 CN WSSD
+    longLabel MFA995 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA995.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1028
+    parent cnv_mfa
+    shortLabel MFA1028 CN WSSD
+    longLabel MFA1028 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1028.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA617
+    parent cnv_mfa
+    shortLabel MFA617 CN WSSD
+    longLabel MFA617 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA617.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA997
+    parent cnv_mfa
+    shortLabel MFA997 CN WSSD
+    longLabel MFA997 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA997.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA12
+    parent cnv_mfa
+    shortLabel MFA12 CN WSSD
+    longLabel MFA12 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA12.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA634
+    parent cnv_mfa
+    shortLabel MFA634 CN WSSD
+    longLabel MFA634 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA634.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA998
+    parent cnv_mfa
+    shortLabel MFA998 CN WSSD
+    longLabel MFA998 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA998.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA13
+    parent cnv_mfa
+    shortLabel MFA13 CN WSSD
+    longLabel MFA13 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA13.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA676
+    parent cnv_mfa
+    shortLabel MFA676 CN WSSD
+    longLabel MFA676 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA676.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA999
+    parent cnv_mfa
+    shortLabel MFA999 CN WSSD
+    longLabel MFA999 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA999.bigbed
+    visibility dense
+
+track cnv_mfa_subset
+compositeTrack on
+shortLabel CN of crab-eating macaques (subset)
+longLabel Copy number estimation for crab-eating macaques (subset)
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_mfa_MFA1028_subset
+    parent cnv_mfa_subset
+    shortLabel MFA1028 CN WSSD
+    longLabel MFA1028 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1028.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA355_subset
+    parent cnv_mfa_subset
+    shortLabel MFA355 CN WSSD
+    longLabel MFA355 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA355.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA566_subset
+    parent cnv_mfa_subset
+    shortLabel MFA566 CN WSSD
+    longLabel MFA566 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA566.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA998_subset
+    parent cnv_mfa_subset
+    shortLabel MFA998 CN WSSD
+    longLabel MFA998 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA998.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA974_subset
+    parent cnv_mfa_subset
+    shortLabel MFA974 CN WSSD
+    longLabel MFA974 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA974.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA746_subset
+    parent cnv_mfa_subset
+    shortLabel MFA746 CN WSSD
+    longLabel MFA746 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA746.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0522_subset
+    parent cnv_mfa_subset
+    shortLabel MFA0522 CN WSSD
+    longLabel MFA0522 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0522.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA980_subset
+    parent cnv_mfa_subset
+    shortLabel MFA980 CN WSSD
+    longLabel MFA980 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA980.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA978_subset
+    parent cnv_mfa_subset
+    shortLabel MFA978 CN WSSD
+    longLabel MFA978 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA978.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1003_subset
+    parent cnv_mfa_subset
+    shortLabel MFA1003 CN WSSD
+    longLabel MFA1003 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1003.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA582-1_subset
+    parent cnv_mfa_subset
+    shortLabel MFA582-1 CN WSSD
+    longLabel MFA582-1 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA582-1.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA615_subset
+    parent cnv_mfa_subset
+    shortLabel MFA615 CN WSSD
+    longLabel MFA615 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA615.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA966_subset
+    parent cnv_mfa_subset
+    shortLabel MFA966 CN WSSD
+    longLabel MFA966 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA966.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA444_subset
+    parent cnv_mfa_subset
+    shortLabel MFA444 CN WSSD
+    longLabel MFA444 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA444.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA1000_subset
+    parent cnv_mfa_subset
+    shortLabel MFA1000 CN WSSD
+    longLabel MFA1000 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA1000.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA983_subset
+    parent cnv_mfa_subset
+    shortLabel MFA983 CN WSSD
+    longLabel MFA983 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA983.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA13_subset
+    parent cnv_mfa_subset
+    shortLabel MFA13 CN WSSD
+    longLabel MFA13 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA13.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA999_subset
+    parent cnv_mfa_subset
+    shortLabel MFA999 CN WSSD
+    longLabel MFA999 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA999.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA0497_subset
+    parent cnv_mfa_subset
+    shortLabel MFA0497 CN WSSD
+    longLabel MFA0497 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA0497.bigbed
+    visibility dense
+
+    track cnv_mfa_MFA454_subset
+    parent cnv_mfa_subset
+    shortLabel MFA454 CN WSSD
+    longLabel MFA454 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.MFA454.bigbed
+    visibility dense
+
+track cnv_mmu
+compositeTrack on
+shortLabel CN of for rhesus macaques
+longLabel Copy number estimation for rhesus macaques
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_mmu_MMU0595
+    parent cnv_mmu
+    shortLabel MMU0595 CN WSSD
+    longLabel MMU0595 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU0595.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5029
+    parent cnv_mmu
+    shortLabel MMU5029 CN WSSD
+    longLabel MMU5029 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5029.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5131
+    parent cnv_mmu
+    shortLabel MMU5131 CN WSSD
+    longLabel MMU5131 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5131.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU0715
+    parent cnv_mmu
+    shortLabel MMU0715 CN WSSD
+    longLabel MMU0715 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU0715.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5046
+    parent cnv_mmu
+    shortLabel MMU5046 CN WSSD
+    longLabel MMU5046 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5046.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5136
+    parent cnv_mmu
+    shortLabel MMU5136 CN WSSD
+    longLabel MMU5136 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5136.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU0756
+    parent cnv_mmu
+    shortLabel MMU0756 CN WSSD
+    longLabel MMU0756 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU0756.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5049
+    parent cnv_mmu
+    shortLabel MMU5049 CN WSSD
+    longLabel MMU5049 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5049.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5139
+    parent cnv_mmu
+    shortLabel MMU5139 CN WSSD
+    longLabel MMU5139 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5139.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1003063
+    parent cnv_mmu
+    shortLabel MMU1003063 CN WSSD
+    longLabel MMU1003063 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1003063.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5050
+    parent cnv_mmu
+    shortLabel MMU5050 CN WSSD
+    longLabel MMU5050 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5050.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5141
+    parent cnv_mmu
+    shortLabel MMU5141 CN WSSD
+    longLabel MMU5141 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5141.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1005159
+    parent cnv_mmu
+    shortLabel MMU1005159 CN WSSD
+    longLabel MMU1005159 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1005159.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5059
+    parent cnv_mmu
+    shortLabel MMU5059 CN WSSD
+    longLabel MMU5059 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5059.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5142
+    parent cnv_mmu
+    shortLabel MMU5142 CN WSSD
+    longLabel MMU5142 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5142.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1005163
+    parent cnv_mmu
+    shortLabel MMU1005163 CN WSSD
+    longLabel MMU1005163 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1005163.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5062
+    parent cnv_mmu
+    shortLabel MMU5062 CN WSSD
+    longLabel MMU5062 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5062.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5149
+    parent cnv_mmu
+    shortLabel MMU5149 CN WSSD
+    longLabel MMU5149 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5149.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1205169
+    parent cnv_mmu
+    shortLabel MMU1205169 CN WSSD
+    longLabel MMU1205169 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1205169.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5063
+    parent cnv_mmu
+    shortLabel MMU5063 CN WSSD
+    longLabel MMU5063 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5063.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5150
+    parent cnv_mmu
+    shortLabel MMU5150 CN WSSD
+    longLabel MMU5150 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5150.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU2019108-1
+    parent cnv_mmu
+    shortLabel MMU2019108-1 CN WSSD
+    longLabel MMU2019108-1 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU2019108-1.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5066
+    parent cnv_mmu
+    shortLabel MMU5066 CN WSSD
+    longLabel MMU5066 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5066.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5187
+    parent cnv_mmu
+    shortLabel MMU5187 CN WSSD
+    longLabel MMU5187 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5187.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5001
+    parent cnv_mmu
+    shortLabel MMU5001 CN WSSD
+    longLabel MMU5001 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5001.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5073
+    parent cnv_mmu
+    shortLabel MMU5073 CN WSSD
+    longLabel MMU5073 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5073.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5202
+    parent cnv_mmu
+    shortLabel MMU5202 CN WSSD
+    longLabel MMU5202 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5202.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5003
+    parent cnv_mmu
+    shortLabel MMU5003 CN WSSD
+    longLabel MMU5003 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5003.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5076
+    parent cnv_mmu
+    shortLabel MMU5076 CN WSSD
+    longLabel MMU5076 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5076.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5204
+    parent cnv_mmu
+    shortLabel MMU5204 CN WSSD
+    longLabel MMU5204 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5204.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5018
+    parent cnv_mmu
+    shortLabel MMU5018 CN WSSD
+    longLabel MMU5018 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5018.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5085
+    parent cnv_mmu
+    shortLabel MMU5085 CN WSSD
+    longLabel MMU5085 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5085.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5205
+    parent cnv_mmu
+    shortLabel MMU5205 CN WSSD
+    longLabel MMU5205 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5205.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5023
+    parent cnv_mmu
+    shortLabel MMU5023 CN WSSD
+    longLabel MMU5023 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5023.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5115
+    parent cnv_mmu
+    shortLabel MMU5115 CN WSSD
+    longLabel MMU5115 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5115.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5206
+    parent cnv_mmu
+    shortLabel MMU5206 CN WSSD
+    longLabel MMU5206 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5206.bigbed
+    visibility dense
+
+track cnv_mmu_subset
+compositeTrack on
+shortLabel CN of for rhesus macaques (subset)
+longLabel Copy number estimation for rhesus macaques (subset)
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_mmu_MMU5001_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5001 CN WSSD
+    longLabel MMU5001 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5001.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5202_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5202 CN WSSD
+    longLabel MMU5202 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5202.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5131_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5131 CN WSSD
+    longLabel MMU5131 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5131.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5062_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5062 CN WSSD
+    longLabel MMU5062 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5062.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5085_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5085 CN WSSD
+    longLabel MMU5085 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5085.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1005159_subset
+    parent cnv_mmu_subset
+    shortLabel MMU1005159 CN WSSD
+    longLabel MMU1005159 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1005159.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5204_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5204 CN WSSD
+    longLabel MMU5204 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5204.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5073_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5073 CN WSSD
+    longLabel MMU5073 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5073.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5115_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5115 CN WSSD
+    longLabel MMU5115 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5115.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1003063_subset
+    parent cnv_mmu_subset
+    shortLabel MMU1003063 CN WSSD
+    longLabel MMU1003063 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1003063.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1005163_subset
+    parent cnv_mmu_subset
+    shortLabel MMU1005163 CN WSSD
+    longLabel MMU1005163 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1005163.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5141_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5141 CN WSSD
+    longLabel MMU5141 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5141.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU1205169_subset
+    parent cnv_mmu_subset
+    shortLabel MMU1205169 CN WSSD
+    longLabel MMU1205169 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU1205169.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU0756_subset
+    parent cnv_mmu_subset
+    shortLabel MMU0756 CN WSSD
+    longLabel MMU0756 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU0756.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5205_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5205 CN WSSD
+    longLabel MMU5205 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5205.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5046_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5046 CN WSSD
+    longLabel MMU5046 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5046.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5003_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5003 CN WSSD
+    longLabel MMU5003 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5003.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5150_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5150 CN WSSD
+    longLabel MMU5150 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5150.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU0715_subset
+    parent cnv_mmu_subset
+    shortLabel MMU0715 CN WSSD
+    longLabel MMU0715 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU0715.bigbed
+    visibility dense
+
+    track cnv_mmu_MMU5139_subset
+    parent cnv_mmu_subset
+    shortLabel MMU5139 CN WSSD
+    longLabel MMU5139 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.MMU5139.bigbed
+    visibility dense
+
+track cnv_1kgp
+compositeTrack on
+shortLabel CN of human populations in 1KGP
+longLabel Copy number estimation for human populations in 1KGP
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_1kgp_HG00096
+    parent cnv_1kgp
+    shortLabel HG00096 CN WSSD
+    longLabel HG00096 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00096.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01137
+    parent cnv_1kgp
+    shortLabel HG01137 CN WSSD
+    longLabel HG01137 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01137.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02654
+    parent cnv_1kgp
+    shortLabel HG02654 CN WSSD
+    longLabel HG02654 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02654.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA07051
+    parent cnv_1kgp
+    shortLabel NA07051 CN WSSD
+    longLabel NA07051 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA07051.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19704
+    parent cnv_1kgp
+    shortLabel NA19704 CN WSSD
+    longLabel NA19704 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19704.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00097
+    parent cnv_1kgp
+    shortLabel HG00097 CN WSSD
+    longLabel HG00097 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00097.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01500
+    parent cnv_1kgp
+    shortLabel HG01500 CN WSSD
+    longLabel HG01500 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01500.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02655
+    parent cnv_1kgp
+    shortLabel HG02655 CN WSSD
+    longLabel HG02655 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02655.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA07347
+    parent cnv_1kgp
+    shortLabel NA07347 CN WSSD
+    longLabel NA07347 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA07347.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19707
+    parent cnv_1kgp
+    shortLabel NA19707 CN WSSD
+    longLabel NA19707 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19707.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00099
+    parent cnv_1kgp
+    shortLabel HG00099 CN WSSD
+    longLabel HG00099 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00099.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01501
+    parent cnv_1kgp
+    shortLabel HG01501 CN WSSD
+    longLabel HG01501 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01501.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02922
+    parent cnv_1kgp
+    shortLabel HG02922 CN WSSD
+    longLabel HG02922 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02922.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA07357
+    parent cnv_1kgp
+    shortLabel NA07357 CN WSSD
+    longLabel NA07357 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA07357.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19711
+    parent cnv_1kgp
+    shortLabel NA19711 CN WSSD
+    longLabel NA19711 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19711.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00100
+    parent cnv_1kgp
+    shortLabel HG00100 CN WSSD
+    longLabel HG00100 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00100.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01503
+    parent cnv_1kgp
+    shortLabel HG01503 CN WSSD
+    longLabel HG01503 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01503.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02923
+    parent cnv_1kgp
+    shortLabel HG02923 CN WSSD
+    longLabel HG02923 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02923.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18486
+    parent cnv_1kgp
+    shortLabel NA18486 CN WSSD
+    longLabel NA18486 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18486.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19712
+    parent cnv_1kgp
+    shortLabel NA19712 CN WSSD
+    longLabel NA19712 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19712.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00101
+    parent cnv_1kgp
+    shortLabel HG00101 CN WSSD
+    longLabel HG00101 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00101.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01504
+    parent cnv_1kgp
+    shortLabel HG01504 CN WSSD
+    longLabel HG01504 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01504.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02943
+    parent cnv_1kgp
+    shortLabel HG02943 CN WSSD
+    longLabel HG02943 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02943.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18489
+    parent cnv_1kgp
+    shortLabel NA18489 CN WSSD
+    longLabel NA18489 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18489.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20502
+    parent cnv_1kgp
+    shortLabel NA20502 CN WSSD
+    longLabel NA20502 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20502.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00102
+    parent cnv_1kgp
+    shortLabel HG00102 CN WSSD
+    longLabel HG00102 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00102.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01506
+    parent cnv_1kgp
+    shortLabel HG01506 CN WSSD
+    longLabel HG01506 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01506.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02944
+    parent cnv_1kgp
+    shortLabel HG02944 CN WSSD
+    longLabel HG02944 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02944.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18498
+    parent cnv_1kgp
+    shortLabel NA18498 CN WSSD
+    longLabel NA18498 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18498.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20503
+    parent cnv_1kgp
+    shortLabel NA20503 CN WSSD
+    longLabel NA20503 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20503.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00103
+    parent cnv_1kgp
+    shortLabel HG00103 CN WSSD
+    longLabel HG00103 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00103.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01507
+    parent cnv_1kgp
+    shortLabel HG01507 CN WSSD
+    longLabel HG01507 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01507.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02973
+    parent cnv_1kgp
+    shortLabel HG02973 CN WSSD
+    longLabel HG02973 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02973.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18499
+    parent cnv_1kgp
+    shortLabel NA18499 CN WSSD
+    longLabel NA18499 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18499.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20504
+    parent cnv_1kgp
+    shortLabel NA20504 CN WSSD
+    longLabel NA20504 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20504.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00105
+    parent cnv_1kgp
+    shortLabel HG00105 CN WSSD
+    longLabel HG00105 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00105.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01509
+    parent cnv_1kgp
+    shortLabel HG01509 CN WSSD
+    longLabel HG01509 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01509.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02974
+    parent cnv_1kgp
+    shortLabel HG02974 CN WSSD
+    longLabel HG02974 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02974.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18501
+    parent cnv_1kgp
+    shortLabel NA18501 CN WSSD
+    longLabel NA18501 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18501.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20505
+    parent cnv_1kgp
+    shortLabel NA20505 CN WSSD
+    longLabel NA20505 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20505.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00171
+    parent cnv_1kgp
+    shortLabel HG00171 CN WSSD
+    longLabel HG00171 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00171.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01510
+    parent cnv_1kgp
+    shortLabel HG01510 CN WSSD
+    longLabel HG01510 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01510.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03006
+    parent cnv_1kgp
+    shortLabel HG03006 CN WSSD
+    longLabel HG03006 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03006.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18502
+    parent cnv_1kgp
+    shortLabel NA18502 CN WSSD
+    longLabel NA18502 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18502.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20506
+    parent cnv_1kgp
+    shortLabel NA20506 CN WSSD
+    longLabel NA20506 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20506.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00173
+    parent cnv_1kgp
+    shortLabel HG00173 CN WSSD
+    longLabel HG00173 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00173.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01565
+    parent cnv_1kgp
+    shortLabel HG01565 CN WSSD
+    longLabel HG01565 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01565.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03007
+    parent cnv_1kgp
+    shortLabel HG03007 CN WSSD
+    longLabel HG03007 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03007.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18504
+    parent cnv_1kgp
+    shortLabel NA18504 CN WSSD
+    longLabel NA18504 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18504.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20507
+    parent cnv_1kgp
+    shortLabel NA20507 CN WSSD
+    longLabel NA20507 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20507.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00174
+    parent cnv_1kgp
+    shortLabel HG00174 CN WSSD
+    longLabel HG00174 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00174.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01566
+    parent cnv_1kgp
+    shortLabel HG01566 CN WSSD
+    longLabel HG01566 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01566.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03052
+    parent cnv_1kgp
+    shortLabel HG03052 CN WSSD
+    longLabel HG03052 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03052.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18505
+    parent cnv_1kgp
+    shortLabel NA18505 CN WSSD
+    longLabel NA18505 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18505.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20508
+    parent cnv_1kgp
+    shortLabel NA20508 CN WSSD
+    longLabel NA20508 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20508.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00176
+    parent cnv_1kgp
+    shortLabel HG00176 CN WSSD
+    longLabel HG00176 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00176.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01571
+    parent cnv_1kgp
+    shortLabel HG01571 CN WSSD
+    longLabel HG01571 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01571.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03057
+    parent cnv_1kgp
+    shortLabel HG03057 CN WSSD
+    longLabel HG03057 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03057.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18526
+    parent cnv_1kgp
+    shortLabel NA18526 CN WSSD
+    longLabel NA18526 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18526.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20509
+    parent cnv_1kgp
+    shortLabel NA20509 CN WSSD
+    longLabel NA20509 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20509.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00177
+    parent cnv_1kgp
+    shortLabel HG00177 CN WSSD
+    longLabel HG00177 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00177.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01572
+    parent cnv_1kgp
+    shortLabel HG01572 CN WSSD
+    longLabel HG01572 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01572.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03058
+    parent cnv_1kgp
+    shortLabel HG03058 CN WSSD
+    longLabel HG03058 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03058.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18532
+    parent cnv_1kgp
+    shortLabel NA18532 CN WSSD
+    longLabel NA18532 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18532.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20845
+    parent cnv_1kgp
+    shortLabel NA20845 CN WSSD
+    longLabel NA20845 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20845.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00178
+    parent cnv_1kgp
+    shortLabel HG00178 CN WSSD
+    longLabel HG00178 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00178.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01577
+    parent cnv_1kgp
+    shortLabel HG01577 CN WSSD
+    longLabel HG01577 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01577.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03078
+    parent cnv_1kgp
+    shortLabel HG03078 CN WSSD
+    longLabel HG03078 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03078.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18537
+    parent cnv_1kgp
+    shortLabel NA18537 CN WSSD
+    longLabel NA18537 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18537.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20846
+    parent cnv_1kgp
+    shortLabel NA20846 CN WSSD
+    longLabel NA20846 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20846.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00179
+    parent cnv_1kgp
+    shortLabel HG00179 CN WSSD
+    longLabel HG00179 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00179.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01578
+    parent cnv_1kgp
+    shortLabel HG01578 CN WSSD
+    longLabel HG01578 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01578.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03084
+    parent cnv_1kgp
+    shortLabel HG03084 CN WSSD
+    longLabel HG03084 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03084.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18542
+    parent cnv_1kgp
+    shortLabel NA18542 CN WSSD
+    longLabel NA18542 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18542.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20847
+    parent cnv_1kgp
+    shortLabel NA20847 CN WSSD
+    longLabel NA20847 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20847.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00180
+    parent cnv_1kgp
+    shortLabel HG00180 CN WSSD
+    longLabel HG00180 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00180.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01882
+    parent cnv_1kgp
+    shortLabel HG01882 CN WSSD
+    longLabel HG01882 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01882.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03085
+    parent cnv_1kgp
+    shortLabel HG03085 CN WSSD
+    longLabel HG03085 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03085.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18545
+    parent cnv_1kgp
+    shortLabel NA18545 CN WSSD
+    longLabel NA18545 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18545.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20849
+    parent cnv_1kgp
+    shortLabel NA20849 CN WSSD
+    longLabel NA20849 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20849.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00442
+    parent cnv_1kgp
+    shortLabel HG00442 CN WSSD
+    longLabel HG00442 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00442.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01883
+    parent cnv_1kgp
+    shortLabel HG01883 CN WSSD
+    longLabel HG01883 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01883.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03096
+    parent cnv_1kgp
+    shortLabel HG03096 CN WSSD
+    longLabel HG03096 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03096.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18547
+    parent cnv_1kgp
+    shortLabel NA18547 CN WSSD
+    longLabel NA18547 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18547.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20850
+    parent cnv_1kgp
+    shortLabel NA20850 CN WSSD
+    longLabel NA20850 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20850.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00443
+    parent cnv_1kgp
+    shortLabel HG00443 CN WSSD
+    longLabel HG00443 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00443.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01885
+    parent cnv_1kgp
+    shortLabel HG01885 CN WSSD
+    longLabel HG01885 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01885.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03097
+    parent cnv_1kgp
+    shortLabel HG03097 CN WSSD
+    longLabel HG03097 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03097.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18550
+    parent cnv_1kgp
+    shortLabel NA18550 CN WSSD
+    longLabel NA18550 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18550.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20851
+    parent cnv_1kgp
+    shortLabel NA20851 CN WSSD
+    longLabel NA20851 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20851.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00445
+    parent cnv_1kgp
+    shortLabel HG00445 CN WSSD
+    longLabel HG00445 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00445.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01886
+    parent cnv_1kgp
+    shortLabel HG01886 CN WSSD
+    longLabel HG01886 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01886.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03099
+    parent cnv_1kgp
+    shortLabel HG03099 CN WSSD
+    longLabel HG03099 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03099.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18552
+    parent cnv_1kgp
+    shortLabel NA18552 CN WSSD
+    longLabel NA18552 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18552.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20852
+    parent cnv_1kgp
+    shortLabel NA20852 CN WSSD
+    longLabel NA20852 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20852.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00446
+    parent cnv_1kgp
+    shortLabel HG00446 CN WSSD
+    longLabel HG00446 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00446.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01889
+    parent cnv_1kgp
+    shortLabel HG01889 CN WSSD
+    longLabel HG01889 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01889.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03100
+    parent cnv_1kgp
+    shortLabel HG03100 CN WSSD
+    longLabel HG03100 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03100.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18940
+    parent cnv_1kgp
+    shortLabel NA18940 CN WSSD
+    longLabel NA18940 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18940.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20853
+    parent cnv_1kgp
+    shortLabel NA20853 CN WSSD
+    longLabel NA20853 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20853.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00448
+    parent cnv_1kgp
+    shortLabel HG00448 CN WSSD
+    longLabel HG00448 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00448.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01890
+    parent cnv_1kgp
+    shortLabel HG01890 CN WSSD
+    longLabel HG01890 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01890.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03615
+    parent cnv_1kgp
+    shortLabel HG03615 CN WSSD
+    longLabel HG03615 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03615.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18942
+    parent cnv_1kgp
+    shortLabel NA18942 CN WSSD
+    longLabel NA18942 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18942.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00449
+    parent cnv_1kgp
+    shortLabel HG00449 CN WSSD
+    longLabel HG00449 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00449.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01917
+    parent cnv_1kgp
+    shortLabel HG01917 CN WSSD
+    longLabel HG01917 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01917.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03616
+    parent cnv_1kgp
+    shortLabel HG03616 CN WSSD
+    longLabel HG03616 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03616.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18943
+    parent cnv_1kgp
+    shortLabel NA18943 CN WSSD
+    longLabel NA18943 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18943.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00451
+    parent cnv_1kgp
+    shortLabel HG00451 CN WSSD
+    longLabel HG00451 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00451.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01918
+    parent cnv_1kgp
+    shortLabel HG01918 CN WSSD
+    longLabel HG01918 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01918.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03642
+    parent cnv_1kgp
+    shortLabel HG03642 CN WSSD
+    longLabel HG03642 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03642.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18944
+    parent cnv_1kgp
+    shortLabel NA18944 CN WSSD
+    longLabel NA18944 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18944.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00452
+    parent cnv_1kgp
+    shortLabel HG00452 CN WSSD
+    longLabel HG00452 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00452.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01956
+    parent cnv_1kgp
+    shortLabel HG01956 CN WSSD
+    longLabel HG01956 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01956.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03643
+    parent cnv_1kgp
+    shortLabel HG03643 CN WSSD
+    longLabel HG03643 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03643.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18945
+    parent cnv_1kgp
+    shortLabel NA18945 CN WSSD
+    longLabel NA18945 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18945.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00553
+    parent cnv_1kgp
+    shortLabel HG00553 CN WSSD
+    longLabel HG00553 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00553.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02014
+    parent cnv_1kgp
+    shortLabel HG02014 CN WSSD
+    longLabel HG02014 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02014.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03644
+    parent cnv_1kgp
+    shortLabel HG03644 CN WSSD
+    longLabel HG03644 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03644.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18947
+    parent cnv_1kgp
+    shortLabel NA18947 CN WSSD
+    longLabel NA18947 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18947.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00554
+    parent cnv_1kgp
+    shortLabel HG00554 CN WSSD
+    longLabel HG00554 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00554.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02016
+    parent cnv_1kgp
+    shortLabel HG02016 CN WSSD
+    longLabel HG02016 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02016.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03673
+    parent cnv_1kgp
+    shortLabel HG03673 CN WSSD
+    longLabel HG03673 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03673.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18948
+    parent cnv_1kgp
+    shortLabel NA18948 CN WSSD
+    longLabel NA18948 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18948.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00637
+    parent cnv_1kgp
+    shortLabel HG00637 CN WSSD
+    longLabel HG00637 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00637.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02017
+    parent cnv_1kgp
+    shortLabel HG02017 CN WSSD
+    longLabel HG02017 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02017.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03679
+    parent cnv_1kgp
+    shortLabel HG03679 CN WSSD
+    longLabel HG03679 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03679.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18949
+    parent cnv_1kgp
+    shortLabel NA18949 CN WSSD
+    longLabel NA18949 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18949.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00638
+    parent cnv_1kgp
+    shortLabel HG00638 CN WSSD
+    longLabel HG00638 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00638.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02019
+    parent cnv_1kgp
+    shortLabel HG02019 CN WSSD
+    longLabel HG02019 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02019.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03684
+    parent cnv_1kgp
+    shortLabel HG03684 CN WSSD
+    longLabel HG03684 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03684.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19017
+    parent cnv_1kgp
+    shortLabel NA19017 CN WSSD
+    longLabel NA19017 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19017.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00640
+    parent cnv_1kgp
+    shortLabel HG00640 CN WSSD
+    longLabel HG00640 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00640.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02020
+    parent cnv_1kgp
+    shortLabel HG02020 CN WSSD
+    longLabel HG02020 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02020.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03713
+    parent cnv_1kgp
+    shortLabel HG03713 CN WSSD
+    longLabel HG03713 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03713.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19019
+    parent cnv_1kgp
+    shortLabel NA19019 CN WSSD
+    longLabel NA19019 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19019.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00641
+    parent cnv_1kgp
+    shortLabel HG00641 CN WSSD
+    longLabel HG00641 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00641.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02023
+    parent cnv_1kgp
+    shortLabel HG02023 CN WSSD
+    longLabel HG02023 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02023.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03714
+    parent cnv_1kgp
+    shortLabel HG03714 CN WSSD
+    longLabel HG03714 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03714.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19020
+    parent cnv_1kgp
+    shortLabel NA19020 CN WSSD
+    longLabel NA19020 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19020.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00731
+    parent cnv_1kgp
+    shortLabel HG00731 CN WSSD
+    longLabel HG00731 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00731.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02025
+    parent cnv_1kgp
+    shortLabel HG02025 CN WSSD
+    longLabel HG02025 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02025.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03716
+    parent cnv_1kgp
+    shortLabel HG03716 CN WSSD
+    longLabel HG03716 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03716.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19023
+    parent cnv_1kgp
+    shortLabel NA19023 CN WSSD
+    longLabel NA19023 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19023.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00732
+    parent cnv_1kgp
+    shortLabel HG00732 CN WSSD
+    longLabel HG00732 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00732.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02026
+    parent cnv_1kgp
+    shortLabel HG02026 CN WSSD
+    longLabel HG02026 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02026.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03717
+    parent cnv_1kgp
+    shortLabel HG03717 CN WSSD
+    longLabel HG03717 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03717.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19024
+    parent cnv_1kgp
+    shortLabel NA19024 CN WSSD
+    longLabel NA19024 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19024.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00759
+    parent cnv_1kgp
+    shortLabel HG00759 CN WSSD
+    longLabel HG00759 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00759.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02029
+    parent cnv_1kgp
+    shortLabel HG02029 CN WSSD
+    longLabel HG02029 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02029.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03722
+    parent cnv_1kgp
+    shortLabel HG03722 CN WSSD
+    longLabel HG03722 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03722.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19025
+    parent cnv_1kgp
+    shortLabel NA19025 CN WSSD
+    longLabel NA19025 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19025.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00766
+    parent cnv_1kgp
+    shortLabel HG00766 CN WSSD
+    longLabel HG00766 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00766.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02461
+    parent cnv_1kgp
+    shortLabel HG02461 CN WSSD
+    longLabel HG02461 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02461.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03727
+    parent cnv_1kgp
+    shortLabel HG03727 CN WSSD
+    longLabel HG03727 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03727.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19026
+    parent cnv_1kgp
+    shortLabel NA19026 CN WSSD
+    longLabel NA19026 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19026.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00844
+    parent cnv_1kgp
+    shortLabel HG00844 CN WSSD
+    longLabel HG00844 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00844.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02462
+    parent cnv_1kgp
+    shortLabel HG02462 CN WSSD
+    longLabel HG02462 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02462.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03729
+    parent cnv_1kgp
+    shortLabel HG03729 CN WSSD
+    longLabel HG03729 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03729.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19027
+    parent cnv_1kgp
+    shortLabel NA19027 CN WSSD
+    longLabel NA19027 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19027.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00851
+    parent cnv_1kgp
+    shortLabel HG00851 CN WSSD
+    longLabel HG00851 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00851.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02464
+    parent cnv_1kgp
+    shortLabel HG02464 CN WSSD
+    longLabel HG02464 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02464.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03730
+    parent cnv_1kgp
+    shortLabel HG03730 CN WSSD
+    longLabel HG03730 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03730.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19625
+    parent cnv_1kgp
+    shortLabel NA19625 CN WSSD
+    longLabel NA19625 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19625.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00864
+    parent cnv_1kgp
+    shortLabel HG00864 CN WSSD
+    longLabel HG00864 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00864.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02465
+    parent cnv_1kgp
+    shortLabel HG02465 CN WSSD
+    longLabel HG02465 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02465.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03793
+    parent cnv_1kgp
+    shortLabel HG03793 CN WSSD
+    longLabel HG03793 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03793.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19648
+    parent cnv_1kgp
+    shortLabel NA19648 CN WSSD
+    longLabel NA19648 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19648.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00867
+    parent cnv_1kgp
+    shortLabel HG00867 CN WSSD
+    longLabel HG00867 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00867.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02490
+    parent cnv_1kgp
+    shortLabel HG02490 CN WSSD
+    longLabel HG02490 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02490.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03796
+    parent cnv_1kgp
+    shortLabel HG03796 CN WSSD
+    longLabel HG03796 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03796.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19649
+    parent cnv_1kgp
+    shortLabel NA19649 CN WSSD
+    longLabel NA19649 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19649.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00879
+    parent cnv_1kgp
+    shortLabel HG00879 CN WSSD
+    longLabel HG00879 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00879.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02491
+    parent cnv_1kgp
+    shortLabel HG02491 CN WSSD
+    longLabel HG02491 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02491.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03800
+    parent cnv_1kgp
+    shortLabel HG03800 CN WSSD
+    longLabel HG03800 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03800.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19651
+    parent cnv_1kgp
+    shortLabel NA19651 CN WSSD
+    longLabel NA19651 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19651.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00881
+    parent cnv_1kgp
+    shortLabel HG00881 CN WSSD
+    longLabel HG00881 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00881.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02561
+    parent cnv_1kgp
+    shortLabel HG02561 CN WSSD
+    longLabel HG02561 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02561.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03803
+    parent cnv_1kgp
+    shortLabel HG03803 CN WSSD
+    longLabel HG03803 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03803.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19652
+    parent cnv_1kgp
+    shortLabel NA19652 CN WSSD
+    longLabel NA19652 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19652.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01112
+    parent cnv_1kgp
+    shortLabel HG01112 CN WSSD
+    longLabel HG01112 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01112.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02562
+    parent cnv_1kgp
+    shortLabel HG02562 CN WSSD
+    longLabel HG02562 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02562.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03885
+    parent cnv_1kgp
+    shortLabel HG03885 CN WSSD
+    longLabel HG03885 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03885.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19654
+    parent cnv_1kgp
+    shortLabel NA19654 CN WSSD
+    longLabel NA19654 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19654.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01113
+    parent cnv_1kgp
+    shortLabel HG01113 CN WSSD
+    longLabel HG01113 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01113.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02570
+    parent cnv_1kgp
+    shortLabel HG02570 CN WSSD
+    longLabel HG02570 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02570.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03886
+    parent cnv_1kgp
+    shortLabel HG03886 CN WSSD
+    longLabel HG03886 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03886.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19655
+    parent cnv_1kgp
+    shortLabel NA19655 CN WSSD
+    longLabel NA19655 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19655.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01124
+    parent cnv_1kgp
+    shortLabel HG01124 CN WSSD
+    longLabel HG01124 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01124.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02571
+    parent cnv_1kgp
+    shortLabel HG02571 CN WSSD
+    longLabel HG02571 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02571.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA06985
+    parent cnv_1kgp
+    shortLabel NA06985 CN WSSD
+    longLabel NA06985 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA06985.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19657
+    parent cnv_1kgp
+    shortLabel NA19657 CN WSSD
+    longLabel NA19657 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19657.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01125
+    parent cnv_1kgp
+    shortLabel HG01125 CN WSSD
+    longLabel HG01125 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01125.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02600
+    parent cnv_1kgp
+    shortLabel HG02600 CN WSSD
+    longLabel HG02600 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02600.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA06986
+    parent cnv_1kgp
+    shortLabel NA06986 CN WSSD
+    longLabel NA06986 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA06986.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19658
+    parent cnv_1kgp
+    shortLabel NA19658 CN WSSD
+    longLabel NA19658 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19658.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01133
+    parent cnv_1kgp
+    shortLabel HG01133 CN WSSD
+    longLabel HG01133 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01133.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02601
+    parent cnv_1kgp
+    shortLabel HG02601 CN WSSD
+    longLabel HG02601 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02601.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA06994
+    parent cnv_1kgp
+    shortLabel NA06994 CN WSSD
+    longLabel NA06994 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA06994.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19700
+    parent cnv_1kgp
+    shortLabel NA19700 CN WSSD
+    longLabel NA19700 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19700.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01134
+    parent cnv_1kgp
+    shortLabel HG01134 CN WSSD
+    longLabel HG01134 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01134.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02603
+    parent cnv_1kgp
+    shortLabel HG02603 CN WSSD
+    longLabel HG02603 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02603.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA07000
+    parent cnv_1kgp
+    shortLabel NA07000 CN WSSD
+    longLabel NA07000 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA07000.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19701
+    parent cnv_1kgp
+    shortLabel NA19701 CN WSSD
+    longLabel NA19701 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19701.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01136
+    parent cnv_1kgp
+    shortLabel HG01136 CN WSSD
+    longLabel HG01136 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01136.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02604
+    parent cnv_1kgp
+    shortLabel HG02604 CN WSSD
+    longLabel HG02604 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02604.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA07037
+    parent cnv_1kgp
+    shortLabel NA07037 CN WSSD
+    longLabel NA07037 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA07037.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA19703
+    parent cnv_1kgp
+    shortLabel NA19703 CN WSSD
+    longLabel NA19703 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA19703.bigbed
+    visibility dense
+
+track cnv_1kgp_subset
+compositeTrack on
+shortLabel CN of human populations in 1KGP (subset)
+longLabel Copy number estimation for human populations in 1KGP (subset)
+type bigBed 9
+group varRep
+itemRgb On
+html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+
+    track cnv_1kgp_NA18940_subset
+    parent cnv_1kgp_subset
+    shortLabel NA18940 CN WSSD
+    longLabel NA18940 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18940.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA06986_subset
+    parent cnv_1kgp_subset
+    shortLabel NA06986 CN WSSD
+    longLabel NA06986 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA06986.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18943_subset
+    parent cnv_1kgp_subset
+    shortLabel NA18943 CN WSSD
+    longLabel NA18943 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18943.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00099_subset
+    parent cnv_1kgp_subset
+    shortLabel HG00099 CN WSSD
+    longLabel HG00099 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00099.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01577_subset
+    parent cnv_1kgp_subset
+    shortLabel HG01577 CN WSSD
+    longLabel HG01577 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01577.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03684_subset
+    parent cnv_1kgp_subset
+    shortLabel HG03684 CN WSSD
+    longLabel HG03684 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03684.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00637_subset
+    parent cnv_1kgp_subset
+    shortLabel HG00637 CN WSSD
+    longLabel HG00637 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00637.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA18942_subset
+    parent cnv_1kgp_subset
+    shortLabel NA18942 CN WSSD
+    longLabel NA18942 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA18942.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01134_subset
+    parent cnv_1kgp_subset
+    shortLabel HG01134 CN WSSD
+    longLabel HG01134 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01134.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03085_subset
+    parent cnv_1kgp_subset
+    shortLabel HG03085 CN WSSD
+    longLabel HG03085 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03085.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03673_subset
+    parent cnv_1kgp_subset
+    shortLabel HG03673 CN WSSD
+    longLabel HG03673 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03673.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG01886_subset
+    parent cnv_1kgp_subset
+    shortLabel HG01886 CN WSSD
+    longLabel HG01886 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG01886.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02029_subset
+    parent cnv_1kgp_subset
+    shortLabel HG02029 CN WSSD
+    longLabel HG02029 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02029.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00176_subset
+    parent cnv_1kgp_subset
+    shortLabel HG00176 CN WSSD
+    longLabel HG00176 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00176.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02019_subset
+    parent cnv_1kgp_subset
+    shortLabel HG02019 CN WSSD
+    longLabel HG02019 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02019.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG00105_subset
+    parent cnv_1kgp_subset
+    shortLabel HG00105 CN WSSD
+    longLabel HG00105 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG00105.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03084_subset
+    parent cnv_1kgp_subset
+    shortLabel HG03084 CN WSSD
+    longLabel HG03084 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03084.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG02600_subset
+    parent cnv_1kgp_subset
+    shortLabel HG02600 CN WSSD
+    longLabel HG02600 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG02600.bigbed
+    visibility dense
+
+    track cnv_1kgp_NA20502_subset
+    parent cnv_1kgp_subset
+    shortLabel NA20502 CN WSSD
+    longLabel NA20502 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.NA20502.bigbed
+    visibility dense
+
+    track cnv_1kgp_HG03729_subset
+    parent cnv_1kgp_subset
+    shortLabel HG03729 CN WSSD
+    longLabel HG03729 CN WSSD
+    type bigBed 9
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.HG03729.bigbed
+    visibility dense
+

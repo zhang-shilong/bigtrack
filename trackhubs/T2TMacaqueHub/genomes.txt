@@ -1,0 +1,24 @@
+genome T2T-MMU8v2.0
+trackDb T2T-MMU8v2.0/trackDb.txt
+groups T2T-MMU8v2.0/groups.txt
+organism Rhesus macaque
+scientificName Macaca mulatta
+twoBitPath https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.2bit
+chromSizes https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.fasta.sizes
+defaultPos chr1:0-100000
+orderKey 1
+description T2T-MMU8v2.0 (Rhesus macaque)
+htmlPath https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/description.html
+
+genome T2T-MFA8v1.1
+trackDb T2T-MFA8v1.1/trackDb.txt
+groups T2T-MFA8v1.1/groups.txt
+organism Crab-eating macaque
+scientificName Macaca fascicularis
+twoBitPath https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.2bit
+chromSizes https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.fasta.sizes
+defaultPos chr1:0-100000
+orderKey 2
+description T2T-MFA8v1.1 (Crab-eating macaque)
+htmlPath https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/description.html
+
