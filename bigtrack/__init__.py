@@ -6,6 +6,6 @@ from .genome import Genome
 from .group import Group
 from .trackdb import TrackDb
 from .track import Track
-from .sampled_track import SampledTrack
 from .composite_track import CompositeTrack
+from .sampled_track import SampledCompositeTrack
 from .super_track import SuperTrack

@@ -1,0 +1,17 @@
+<h2>Description</h2>
+<p>
+    Sequence identity between chromosomes.
+</p>
+
+<h2>Method</h2>
+<p>
+    The same method as described for <a href="https://research.nhgri.nih.gov/CustomTracks/T2T_hubs/T2Tgenomes/html/seqIdy.html">T2T-CHM13</a> is used. Each chromosome was mashmapped using mashmap v3.1.1 against every other chromosome one-by-one with options <code>mashmap -t $cpus -r $chrA.fa -q $chrB.fa -M --pi 80 -s 10000</code>. This maps each 10kb window of the reference chromosome against the target, does not combine consecutive matches, retains only the best match, and only matches with a percent identity greater than 80%. The percent identity of each of these mappings was converted to an RGB value on a scale from 80-100 using a custom python script, such that anything below 80% identity is colored a lighter yellow outside the heatmap range, and anything with no mapping is left blank. Then all percent identities from 80 to 100 are on a scale from yellow to deep red, with deep red/maroon being the highest percent identity and yellow being the lowest.
+</p>
+
+<h2>Reference</h2>
+<p>
+    Sergey Nurk <i>et al</i>., The complete sequence of a human genome. <i>Science</i> 376, 44-53 (2022). DOI: <a href="https://doi.org/10.1126/science.abj6987">10.1126/science.abj6987</a>
+</p>
+
+<h2>Contact</h2>
+<a href="mailto:shilong.zhang@sjtu.edu.cn">Shilong Zhang</a>

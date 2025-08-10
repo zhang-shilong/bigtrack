@@ -42,9 +42,9 @@ if [ "${gff3}" ]; then
 	) \
 	| gff3ToGenePred -geneNameAttr=gene_name stdin "${prefix}.genePred"
 elif [ "${gtf}" ]; then
-	prefix="${gff3%.gz}"
+	prefix="${gtf%.gz}"
 	prefix="${prefix%.gtf}"
-	gtfToGenePred -genePredExt ${gtf} ${prefix}.genePred
+	gtfToGenePred -genePredExt -geneNameAsName2 ${gtf} ${prefix}.genePred
 else
 	echo 'GFF3 or GTF should be provided.'
 fi
