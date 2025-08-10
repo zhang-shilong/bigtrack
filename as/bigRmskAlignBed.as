@@ -1,6 +1,6 @@
 table bigRmskAlignBed
 "Repetitive Element Alignment Auxilary Data" 
-    (
+(
     string  chrom;        "Reference sequence chromosome or scaffold" 
     uint    chromStart;    "Start position of alignment on chromosome" 
     uint    chromEnd;    "End position of alignment on chromosome" 
@@ -18,4 +18,4 @@ table bigRmskAlignBed
     uint    repRemain;      "Remaining unaligned bp in the repeat sequence" 
     uint    id;             "The ID of the hit. Used to link related fragments" 
     lstring calignData;     "The alignment data stored as a single string" 
-    )
+)

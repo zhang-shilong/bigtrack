@@ -1,6 +1,6 @@
 table bigGenePred
 "bigGenePred gene models"
-   (
+(
    string chrom;       "Reference sequence chromosome or scaffold"
    uint   chromStart;  "Start position in chromosome"
    uint   chromEnd;    "End position in chromosome"
@@ -21,5 +21,5 @@ table bigGenePred
    string geneName;    "Primary identifier for gene"
    string geneName2;   "Alternative/human readable gene name"
    string geneType;    "Gene type"
-   )
+)
 

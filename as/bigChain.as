@@ -1,7 +1,6 @@
-
 table bigChain
 "bigChain pairwise alignment"
-    (
+(
     string chrom;       "Reference sequence chromosome or scaffold"
     uint   chromStart;  "Start position in chromosome"
     uint   chromEnd;    "End position in chromosome"
@@ -14,5 +13,5 @@ table bigChain
     uint qStart;        "start of alignment on query sequence"
     uint qEnd;          "end of alignment on query sequence"
     uint chainScore;    "score from chain"
-    )
+)
 
