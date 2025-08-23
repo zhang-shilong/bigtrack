@@ -17,7 +17,7 @@ hub = bigtrack.Hub(
     hub="T2TMacaqueHub",
     shortLabel="T2T Macaque Hub",
     longLabel="T2T Macaque Hub",
-    email="shilong.zhang.cn@gmail.com",
+    email="shilong.zhang@sjtu.edu.cn",
     descriptionUrl="description.html",
 )
 
