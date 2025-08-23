@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bigtrack"
-version = "0.1"
+dynamic = ["version"]
 description = "A lightweight Python package for creating UCSC Track Hubs with ease."
 readme = "README.md"
 requires-python = ">=3.7"
@@ -17,4 +17,8 @@ license = { text = "MIT" }
 keywords = ["UCSC", "track hub", "genomics", "bioinformatics"]
 
 [tool.setuptools.packages.find]
-where = ["bigtrack"]
+where = ["."]
+include = ["bigtrack"]
+
+[tool.setuptools.dynamic]
+version = {attr = "bigtrack.__version__"}

@@ -168,7 +168,6 @@ Required keys: `track`, `superTrack` (default: `on`), `parent` (default: `None`)
 
 Thanks to the Python package [trackhub](https://github.com/daler/trackhub).
 
-
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
