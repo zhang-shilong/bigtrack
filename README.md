@@ -136,7 +136,7 @@ To enhance usage, track collections are also available.
 
 A composite track groups multiple subtracks that share the same type. See UCSC docs for [composite track settings](https://genome.ucsc.edu/goldenpath/help/trackDb/trackDbHub.html#Composite_Track_Settings).
 
-Required keys: `track`, `compositeTrack` (default: `on`), parent (default: `None`), shortLabel, longLabel, type.
+Required keys: `track`, `compositeTrack` (default: `on`), `parent` (default: `None`), `shortLabel`, `longLabel`, `type`.
 
 #### SampledCompositeTrack
 
@@ -157,6 +157,10 @@ bigtrack.SampledCompositeTrack(
 A superTrack provides a higher-level container that can contain multiple composite tracks or plain tracks. See UCSC docs for [super track settings](https://genome.ucsc.edu/goldenpath/help/trackDb/trackDbHub.html#superTrack).
 
 Required keys: `track`, `superTrack` (default: `on`), `parent` (default: `None`), `shortLabel`, `longLabel`.
+
+### Example
+
+See codes for [T2T Macaque Hub](./trackhubs/generate_T2TMacaqueHub.py).
 
 ## Todo
 
