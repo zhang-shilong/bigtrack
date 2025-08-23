@@ -1,10 +1,20 @@
 # bigtrack
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zhang-shilong/bigtrack/python-publish.yml)
+![PyPI - Version](https://img.shields.io/pypi/v/bigtrack?label=PyPI&color=%230073b7)
+![GitHub License](https://img.shields.io/github/license/zhang-shilong/bigtrack)
+
 A lightweight Python package for creating UCSC Track Hubs with ease.
 
 _Note: This package was primarily developed to generate track hubs for my previous publications. It has not been tested for production use._
 
 ## Installation
+
+Install by pip:
+
+```bash
+pip install bigtrack
+```
 
 Build the latest version from source:
 
@@ -165,7 +175,6 @@ See codes for [T2T Macaque Hub](./trackhubs/generate_T2TMacaqueHub.py).
 ## Todo
 
 - [ ] Add pre-flight checks while generating hubs
-- [ ] Add PyPi / conda support
 - [ ] Add automatic format conversion
 
 ## Acknowledgement
