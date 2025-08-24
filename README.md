@@ -16,7 +16,7 @@ Install by pip:
 pip install bigtrack
 ```
 
-Build the latest version from source:
+Install the latest version from source:
 
 ```bash
 git clone https://github.com/zhang-shilong/bigtrack
@@ -31,7 +31,7 @@ pip install .
 ```python
 import bigtrack
 
-# generate a hub
+# make a hub
 hub = bigtrack.Hub(
     hub="ExampleHub",
     shortLabel="ExampleHub",
@@ -48,7 +48,7 @@ genome = bigtrack.Genome(
     chromSizes="/path/to/sizes/file",
     defaultPos="chr1:0-100000",
     orderKey=1,
-    description="This is a example",
+    description="This is an example",
     htmlPath="/path/to/html/description",
 )
 hub.add_genome(genome)  # add the genome to hub
@@ -108,7 +108,7 @@ You can host this directory on any web server (HTTP/HTTPS/FTP) and point UCSC Ge
 
 ### Hub components
 
-bigtrack models the standard UCSC hub components as Python classes. Each object has reserved keywords — those are required for correct hub generation. Some fields have sensible defaults. Below are the main components, their purpose and required keys. Please note, required keys may not consistent with UCSC guidance.
+bigtrack models the standard UCSC hub components as Python classes. Each object has reserved keywords — those are required for correct hub generation. Some fields have sensible defaults. Please note, required keys may not consistent with UCSC guidance.
 
 #### Hub
 
@@ -140,7 +140,7 @@ Basic (atomic) track object.
 
 Required keys: `track`, `parent` (default: `None`), `shortLabel`, `longLabel`, `type`.
 
-To enhance usage, track collections are also available.
+To enhance usage, track collections are also available:
 
 #### CompositeTrack
 
