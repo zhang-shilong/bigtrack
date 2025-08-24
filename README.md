@@ -1,8 +1,8 @@
 # bigtrack
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zhang-shilong/bigtrack/python-publish.yml)
-![PyPI - Version](https://img.shields.io/pypi/v/bigtrack?label=PyPI&color=%230073b7)
-![GitHub License](https://img.shields.io/github/license/zhang-shilong/bigtrack)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zhang-shilong/bigtrack/python-publish.yml)](https://github.com/zhang-shilong/bigtrack/actions)
+[![PyPI - Version](https://img.shields.io/pypi/v/bigtrack?label=PyPI&color=%230073b7)](https://pypi.org/project/bigtrack/)
+[![GitHub License](https://img.shields.io/github/license/zhang-shilong/bigtrack)](./LICENSE)
 
 A lightweight Python package for creating UCSC Track Hubs with ease.
 
@@ -179,7 +179,12 @@ See codes for [T2T Macaque Hub](./trackhubs/generate_T2TMacaqueHub.py).
 
 ## Acknowledgement
 
-Thanks to the Python package [trackhub](https://github.com/daler/trackhub).
+Thanks to the Python package [daler/trackhub](https://github.com/daler/trackhub).
+
+## Citation
+
+1. Zhang, S., Xu, N., Fu, L. *et al*. Integrated analysis of the complete sequence of a macaque genome. *Nature* (2025). [https://doi.org/10.1038/s41586-025-08596-w](https://doi.org/10.1038/s41586-025-08596-w)
+2. Zhang, S. _et al_. A complete and near-perfect rhesus macaque reference genome: lessons from subtelomeric repeats and sequencing bias. _bioRxiv_ (2025). https://doi.org/10.1101/2025.08.04.668424
 
 ## License
 
