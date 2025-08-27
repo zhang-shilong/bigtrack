@@ -5,14 +5,14 @@ type bigBed 4 +
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.CpG_islands.bigbed
 group regulation
 visibility dense
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cpg_islands.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cpg_islands.html
 
 track methylation
 superTrack on show
 shortLabel Methylation
 longLabel Methylation
 group regulation
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/methylation-nanopolish.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/methylation-nanopolish.html
 
     track methylated_cpgs
     parent methylation

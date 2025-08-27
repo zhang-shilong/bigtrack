@@ -1,0 +1,12 @@
+<h2>Description</h2>
+<p>
+    Oxford Nanopore Technology (ONT) read depth.
+</p>
+
+<h2>Methods</h2>
+<p>
+    ONT reads were aligned to the reference genome using winnowmap
+    with parameters <code>-a -x map-ont -Y --secondary=no --eqx -L</code>.
+    Alignments were filtered to retain reads with mapping quality (MQ) ≥ 1 and with SAM flags excluding 3840.
+    Coverage tracks were generated using <a href="https://github.com/deeptools/deepTools">deepTools</a> <code>bamCoverage</code>.
+</p>

@@ -11,7 +11,7 @@ labelFields name2,name
 defaultLabelFields name2,name
 searchIndex name,geneName,geneName2
 searchTrix https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.liftoff-RefSeq_GCF_037993035.2_AXY-Mmul_10_M.ix
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/gene_annotation-liftoff.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/gene_annotation-liftoff.html
 
 track liftoff_mmul_10
 shortLabel Liftoff Mmul_10 RefSeq
@@ -26,5 +26,5 @@ labelFields name2,name
 defaultLabelFields name2,name
 searchIndex name,geneName,geneName2
 searchTrix https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.liftoff-RefSeq_Mmul_10.ix
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/gene_annotation-liftoff.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/gene_annotation-liftoff.html
 

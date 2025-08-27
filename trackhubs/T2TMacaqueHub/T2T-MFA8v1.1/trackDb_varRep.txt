@@ -5,7 +5,7 @@ type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.WindowMasker.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/windowmasker_sdust.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/windowmasker_sdust.html
 
 track longdust
 shortLabel LongDust
@@ -14,7 +14,7 @@ type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.longdust.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/longdust.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/longdust.html
 
 track trf
 shortLabel Tandem repeats
@@ -23,7 +23,7 @@ type bigBed 4
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.TRF_motifs.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/tandem_repeats-trf.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/tandem_repeats-trf.html
 
 track sd
 shortLabel Segmental duplications
@@ -34,7 +34,16 @@ itemRgb On
 group varRep
 visibility pack
 maxItems 100000
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/segmental_duplications-sedef.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/segmental_duplications-sedef.html
+
+track numt
+shortLabel NUMT
+longLabel Nuclear-embedded mitochondrial DNA
+type bigBed 3
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.NUMTs.bigbed
+group varRep
+visibility hide
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/numt.html
 
 track repeatmasker
 shortLabel RepeatMasker
@@ -44,7 +53,7 @@ bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1
 visibility pack
 group varRep
 maxWindowToDraw 5000000
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/repeatmasker.html
 
 track cnv_mfa
 compositeTrack on
@@ -53,7 +62,7 @@ longLabel Copy number estimation for crab-eating macaques
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_mfa_MFA0214
     parent cnv_mfa
@@ -998,7 +1007,7 @@ longLabel Copy number estimation for crab-eating macaques (subset)
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_mfa_MFA1028_subset
     parent cnv_mfa_subset
@@ -1167,7 +1176,7 @@ longLabel Copy number estimation for rhesus macaques
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_mmu_MMU0595
     parent cnv_mmu
@@ -1464,7 +1473,7 @@ longLabel Copy number estimation for rhesus macaques (subset)
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_mmu_MMU5001_subset
     parent cnv_mmu_subset
@@ -1633,7 +1642,7 @@ longLabel Copy number estimation for human populations in 1KGP
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_1kgp_HG00096
     parent cnv_1kgp
@@ -3306,7 +3315,7 @@ longLabel Copy number estimation for human populations in 1KGP (subset)
 type bigBed 9
 group varRep
 itemRgb On
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/cnv-fastcn.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/cnv-fastcn.html
 
     track cnv_1kgp_NA18940_subset
     parent cnv_1kgp_subset

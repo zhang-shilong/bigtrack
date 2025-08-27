@@ -13,7 +13,7 @@ bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2
 itemRgb On
 labelFields none
 group map
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker-alpha_satellites.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/repeatmasker-alpha_satellites.html
 
 track rDNA
 shortLabel rDNA models
@@ -21,7 +21,7 @@ longLabel rDNA models
 type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.rDNA.bigbed
 group map
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/rDNA_models.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/rDNA_models.html
 
 track base_pct
 compositeTrack on
@@ -38,7 +38,7 @@ windowingFunction Mean
 color 0,0,0
 altColor 128,128,128
 viewLimits 30:70
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/base_percent.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/base_percent.html
 
     track gc_pct
     parent base_pct
@@ -69,7 +69,7 @@ gridDefault OFF
 windowingFunction Mean
 viewLimits 0:1
 visibility full
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/mappability-genmap.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/mappability-genmap.html
 
     track mappability_k21
     parent mappability
@@ -101,7 +101,7 @@ graphTypeDefault Bar
 gridDefault OFF
 windowingFunction Mean
 viewLimits 0:100
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/microsatellites.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/microsatellites.html
 
     track microsatellites_GA
     parent microsatellites
@@ -145,7 +145,7 @@ shortLabel Newly resolved regions
 longLabel Newly resolved regions
 type bigBed 3
 group map
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/newly_resolved_regions.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/newly_resolved_regions.html
 
     track newly_resolved_Mmul_10
     parent newly_resolved
@@ -171,7 +171,7 @@ shortLabel Version chains
 longLabel Version chains
 type bigChain
 group map
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-versions.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/chain_alignments-versions.html
 
     track version_chains_T2T-MMU8v1.0
     parent version_chains
@@ -181,4 +181,45 @@ html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-ve
     bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MMU8v1.0.swapped.bigchain.bigbed
     linkDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/liftover_chains/ref-T2T-MMU8v2.0_qry-T2T-MMU8v1.0.swapped.link.bigbed
     visibility pack
+
+track assembly_validation
+superTrack on
+shortLabel Assembly validation
+longLabel Assembly validation
+group map
+itemRgb On
+visibility hide
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/assembly_validation.html
+
+    track pacbio_hifi_depth
+    parent assembly_validation
+    shortLabel PacBio HiFi depth
+    longLabel PacBio HiFi depth (MQ ≥ 1, excluding flag 3840)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.AXM.hifi_depth.MQ1F3840.bigwig
+    color 184,184,184
+    autoScale Off
+    maxHeightPixels 128:36:16
+    graphTypeDefault Bar
+    gridDefault OFF
+    windowingFunction Mean
+    viewLimits 0:100
+    visibility full
+    html https://synplotter.sjtu.edu.cn/disk2/descriptions/read_depth-hifi.html
+
+    track ont_depth
+    parent assembly_validation
+    shortLabel ONT depth
+    longLabel ONT depth (MQ ≥ 1, excluding flag 3840)
+    type bigWig
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.AXM.ont_depth.MQ1F3840.bigwig
+    color 184,184,184
+    autoScale Off
+    maxHeightPixels 128:36:16
+    graphTypeDefault Bar
+    gridDefault OFF
+    windowingFunction Mean
+    viewLimits 0:100
+    visibility full
+    html https://synplotter.sjtu.edu.cn/disk2/descriptions/read_depth-ont.html
 

@@ -1,0 +1,15 @@
+<h2>Description</h2>
+<p>
+    PacBio HiFi read depth.
+</p>
+
+<h2>Methods</h2>
+<p>
+    PacBio HiFi reads were aligned to the reference genome using minimap2
+    with parameters <code>-a -x lr:hq -Y --secondary=no --eqx -L</code>.
+    Alignments were filtered to retain reads with mapping quality (MQ) ≥ 1 and with SAM flags excluding 3840.
+    Coverage tracks were generated using <a href="https://github.com/deeptools/deepTools">deepTools</a> <code>bamCoverage</code>.
+</p>
+
+<h2>Contact</h2>
+<a href="mailto:shilong.zhang@sjtu.edu.cn">Shilong Zhang</a>

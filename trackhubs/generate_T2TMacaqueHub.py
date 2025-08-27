@@ -6,7 +6,7 @@ import bigtrack
 
 
 # global options
-description_dir = "https://synplotter.sjtu.edu.cn/disk2/track_descriptions"
+description_dir = "https://synplotter.sjtu.edu.cn/disk2/descriptions"
 
 
 #################################################
@@ -324,6 +324,51 @@ for genome in ["T2T-MMU8v1.0"]:
     )
     track_version_chains.add_child(child)
 trackDb_map.add_track(track_version_chains)
+
+track_validation = bigtrack.SuperTrack(
+    track="assembly_validation",
+    shortLabel="Assembly validation",
+    longLabel="Assembly validation",
+    group="map",
+    itemRgb="On",
+    visibility="hide",
+    html=f"{description_dir}/assembly_validation.html",
+)
+track_hifi_depth = bigtrack.Track(
+    track="pacbio_hifi_depth",
+    shortLabel="PacBio HiFi depth",
+    longLabel="PacBio HiFi depth (MQ ≥ 1, excluding flag 3840)",
+    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.AXM.hifi_depth.MQ1F3840.bigwig",
+    type="bigWig",
+    color="184,184,184",
+    autoScale="Off",
+    maxHeightPixels="128:36:16",
+    graphTypeDefault="Bar",
+    gridDefault="OFF",
+    windowingFunction="Mean",
+    viewLimits="0:100",
+    visibility="full",
+    html=f"{description_dir}/read_depth-hifi.html",
+)
+track_ont_depth = bigtrack.Track(
+    track="ont_depth",
+    shortLabel="ONT depth",
+    longLabel="ONT depth (MQ ≥ 1, excluding flag 3840)",
+    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.AXM.ont_depth.MQ1F3840.bigwig",
+    type="bigWig",
+    color="184,184,184",
+    autoScale="Off",
+    maxHeightPixels="128:36:16",
+    graphTypeDefault="Bar",
+    gridDefault="OFF",
+    windowingFunction="Mean",
+    viewLimits="0:100",
+    visibility="full",
+    html=f"{description_dir}/read_depth-ont.html",
+)
+track_validation.add_child(track_hifi_depth)
+track_validation.add_child(track_ont_depth)
+trackDb_map.add_track(track_validation)
 
 
 #################################################
@@ -894,6 +939,51 @@ track_microsatellites.add_child(track_microsatellites_GC)
 track_microsatellites.add_child(track_microsatellites_AT)
 trackDb_map.add_track(track_microsatellites)
 
+track_validation = bigtrack.SuperTrack(
+    track="assembly_validation",
+    shortLabel="Assembly validation",
+    longLabel="Assembly validation",
+    group="map",
+    itemRgb="On",
+    visibility="hide",
+    html=f"{description_dir}/assembly_validation.html",
+)
+track_hifi_depth = bigtrack.Track(
+    track="pacbio_hifi_depth",
+    shortLabel="PacBio HiFi depth",
+    longLabel="PacBio HiFi depth (MQ ≥ 1, excluding flag 3840)",
+    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.AXM.hifi_depth.MQ1F3840.bigwig",
+    type="bigWig",
+    color="184,184,184",
+    autoScale="Off",
+    maxHeightPixels="128:36:16",
+    graphTypeDefault="Bar",
+    gridDefault="OFF",
+    windowingFunction="Mean",
+    viewLimits="0:100",
+    visibility="full",
+    html=f"{description_dir}/read_depth-hifi.html",
+)
+track_ont_depth = bigtrack.Track(
+    track="ont_depth",
+    shortLabel="ONT depth",
+    longLabel="ONT depth (MQ ≥ 1, excluding flag 3840)",
+    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.AXM.ont_depth.MQ1F3840.bigwig",
+    type="bigWig",
+    color="184,184,184",
+    autoScale="Off",
+    maxHeightPixels="128:36:16",
+    graphTypeDefault="Bar",
+    gridDefault="OFF",
+    windowingFunction="Mean",
+    viewLimits="0:100",
+    visibility="full",
+    html=f"{description_dir}/read_depth-ont.html",
+)
+track_validation.add_child(track_hifi_depth)
+track_validation.add_child(track_ont_depth)
+trackDb_map.add_track(track_validation)
+
 
 #################################################
 # Genes and Gene Predictions
@@ -1081,6 +1171,18 @@ track_sd = bigtrack.Track(
     html=f"{description_dir}/segmental_duplications-sedef.html",
 )
 trackDb_varRep.add_track(track_sd)
+
+track_numt = bigtrack.Track(
+    track="numt",
+    shortLabel="NUMT",
+    longLabel="Nuclear-embedded mitochondrial DNA",
+    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.NUMTs.bigbed",
+    type="bigBed 3",
+    group="varRep",
+    visibility="hide",
+    html=f"{description_dir}/numt.html",
+)
+trackDb_varRep.add_track(track_numt)
 
 track_repeatmasker = bigtrack.Track(
     track="repeatmasker",

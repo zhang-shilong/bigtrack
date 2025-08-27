@@ -5,7 +5,7 @@ type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.windowmasker_SDust.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/windowmasker_sdust.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/windowmasker_sdust.html
 
 track longdust
 shortLabel LongDust
@@ -14,7 +14,7 @@ type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.longdust.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/longdust.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/longdust.html
 
 track trf
 shortLabel Tandem repeats
@@ -23,7 +23,7 @@ type bigBed 4
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.TRF_motifs.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/tandem_repeats-trf.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/tandem_repeats-trf.html
 
 track sd
 shortLabel Segmental duplications
@@ -34,7 +34,7 @@ itemRgb On
 group varRep
 visibility pack
 maxItems 100000
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/segmental_duplications-sedef.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/segmental_duplications-sedef.html
 
 track numt
 shortLabel NUMT
@@ -43,7 +43,7 @@ type bigBed 3
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2.0.NUMTs.bigbed
 group varRep
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/numt.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/numt.html
 
 track repeatmasker
 shortLabel RepeatMasker
@@ -53,7 +53,7 @@ bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/T2T-MMU8v2
 visibility pack
 group varRep
 maxWindowToDraw 5000000
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/repeatmasker.html
 
 track satr
 compositeTrack on
@@ -61,7 +61,7 @@ shortLabel SATR family
 longLabel SATR family
 type bigBed
 group varRep
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/repeatmasker-satr_family.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/repeatmasker-satr_family.html
 
     track satr1
     parent satr
@@ -104,7 +104,7 @@ type bigBed 9
 group varRep
 itemRgb On
 visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/sequence_identity-mashmap.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/sequence_identity-mashmap.html
 
     track sequence_identity_chr1
     parent sequence_identity

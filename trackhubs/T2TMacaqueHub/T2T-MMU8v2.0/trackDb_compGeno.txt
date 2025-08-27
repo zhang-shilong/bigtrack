@@ -4,7 +4,7 @@ shortLabel Macaque chains
 longLabel Macaque chains
 type bigChain
 group compGeno
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-other_assemblies.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/chain_alignments-other_assemblies.html
 
     track macaque_chains_Mmul_10
     parent macaque_chains
@@ -39,7 +39,7 @@ shortLabel Primate chains
 longLabel Primate chains
 type bigChain
 group compGeno
-html https://synplotter.sjtu.edu.cn/disk2/track_descriptions/chain_alignments-other_assemblies.html
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/chain_alignments-other_assemblies.html
 
     track primate_chains_T2T-CHM13v2.0
     parent primate_chains
