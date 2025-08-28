@@ -168,6 +168,12 @@ A superTrack provides a higher-level container that can contain multiple composi
 
 Required keys: `track`, `superTrack` (default: `on`), `parent` (default: `None`), `shortLabel`, `longLabel`.
 
+#### MultiWig
+
+A multiWig track enables the simultaneous display and comparison of multiple wiggle signal tracks. See UCSC docs for [multiWig settings](https://genome.ucsc.edu/goldenpath/help/trackDb/trackDbHub.html#multiWig).
+
+Required keys: `track`, `parent` (default: `None`), `container` (default: `multiWig`), `type` (default: `bigWig`), `shortLabel`, `longLabel`.
+
 ### Example
 
 See codes for [T2T Macaque Hub](./trackhubs/generate_T2TMacaqueHub.py).
