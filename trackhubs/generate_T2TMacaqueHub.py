@@ -362,7 +362,7 @@ track_ont_depth = bigtrack.Track(
     graphTypeDefault="Bar",
     gridDefault="OFF",
     windowingFunction="Mean",
-    viewLimits="0:100",
+    viewLimits="0:60",
     visibility="full",
     html=f"{description_dir}/read_depth-ont.html",
 )
@@ -976,7 +976,7 @@ track_ont_depth = bigtrack.Track(
     graphTypeDefault="Bar",
     gridDefault="OFF",
     windowingFunction="Mean",
-    viewLimits="0:100",
+    viewLimits="0:120",
     visibility="full",
     html=f"{description_dir}/read_depth-ont.html",
 )
