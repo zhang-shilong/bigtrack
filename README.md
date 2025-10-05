@@ -120,7 +120,7 @@ Required keys: `hub`, `shortLabel`, `longLabel`, `genomesFile` (default: `genome
 
 Represents a genome entry (appears in `genomes.txt` and holds per-genome resources).
 
-Required keys: `genome`, `trackDb` (default: `trackDb.txt`), `groups` (default: `groups.txt`), `organism`, `scientificName`.
+Required keys: `genome`, `trackDb` (default: `trackDb.txt`), `groups` (default: `groups.txt`).
 
 #### Group
 
