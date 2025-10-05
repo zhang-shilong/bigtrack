@@ -70,15 +70,6 @@ html https://synplotter.sjtu.edu.cn/disk2/descriptions/microsatellites.html
     color 51,102,0
     visibility full
 
-track windowmasker
-shortLabel WindowMasker + SDust
-longLabel Genomic intervals masked by WindowMasker + SDust
-type bigBed 3
-bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.WindowMasker.bigbed
-group varRep
-visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/descriptions/windowmasker_sdust.html
-
 track longdust
 shortLabel LongDust
 longLabel Genomic intervals masked by LongDust
@@ -87,15 +78,6 @@ bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1
 group varRep
 visibility hide
 html https://synplotter.sjtu.edu.cn/disk2/descriptions/longdust.html
-
-track trf
-shortLabel Tandem repeats
-longLabel Simple tandem repeats by TRF
-type bigBed 4
-bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.TRF_motifs.bigbed
-group varRep
-visibility hide
-html https://synplotter.sjtu.edu.cn/disk2/descriptions/tandem_repeats-trf.html
 
 track sd
 shortLabel Segmental duplications
@@ -116,16 +98,6 @@ bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1
 group varRep
 visibility hide
 html https://synplotter.sjtu.edu.cn/disk2/descriptions/numt.html
-
-track repeatmasker
-shortLabel RepeatMasker
-longLabel RepeatMasker repetitive elements
-type bigRmsk
-bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.RepeatMasker.bigbed
-visibility pack
-group varRep
-maxWindowToDraw 5000000
-html https://synplotter.sjtu.edu.cn/disk2/descriptions/repeatmasker.html
 
 track cnv_mfa
 compositeTrack on

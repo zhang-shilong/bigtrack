@@ -12,7 +12,7 @@ class Genome(HubComponent):
         "trackDb": "trackDb.txt",
         "groups": "groups.txt",
     }
-    required_keys = ["genome", "trackDb", "groups", "organism", "scientificName"]
+    required_keys = ["genome", "trackDb", "groups"]
 
     def __init__(self, **kwargs):
 

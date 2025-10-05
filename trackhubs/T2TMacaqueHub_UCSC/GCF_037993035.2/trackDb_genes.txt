@@ -1,0 +1,15 @@
+track liftoff_mmul_10
+shortLabel Liftoff Mmul_10 RefSeq
+longLabel Liftoff from Mmul_10 (GCF_003339765.1 Annotation Release 103)
+type bigGenePred
+group genes
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.liftoff_Mmul_10.bigBed
+itemRgb On
+visibility hide
+baseColorDefault genomicCodons
+labelFields name2,name
+defaultLabelFields name2,name
+searchIndex name,geneName,geneName2
+searchTrix https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.liftoff_Mmul_10.ix
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/gene_annotation-liftoff.html
+

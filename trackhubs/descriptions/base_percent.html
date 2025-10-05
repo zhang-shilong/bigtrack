@@ -1,12 +1,11 @@
 <h2>Description</h2>
 <p>
-    The GC or AT percent track shows the percentage of G/C bases or A/T bases.
+    This track displays the percentage of G/C or A/T bases within fixed-size windows across the genome, providing a view of local base composition.
 </p>
 
 <h2>Methods</h2>
 <p>
-    Tracks were created with <a href="https://github.com/arq5x/bedtools2">bedtools</a> <code>makewindows</code> and <code>nuc</code> commands.
+    The track was generated using <a href="https://github.com/arq5x/bedtools2">bedtools</a> 
+    <code>makewindows</code> to divide the genome into fixed-length windows, followed by 
+    <code>nuc</code> to calculate nucleotide content for each window.
 </p>
-
-<h2>Contact</h2>
-<a href="mailto:shilong.zhang@sjtu.edu.cn">Shilong Zhang</a>

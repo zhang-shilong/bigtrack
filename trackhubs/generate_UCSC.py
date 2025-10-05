@@ -12,7 +12,7 @@ description_dir = "https://synplotter.sjtu.edu.cn/disk2/descriptions"
 #################################################
 
 hub = bigtrack.Hub(
-    hub="T2TMacaqueHub",
+    hub="T2TMacaqueHub_UCSC",
     shortLabel="T2T Macaque Hub",
     longLabel="T2T Macaque Hub",
     email="shilong.zhang@sjtu.edu.cn",
@@ -32,14 +32,7 @@ data_dir = "https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0"
 #################################################
 
 genome_v2 = bigtrack.Genome(
-    genome="T2T-MMU8v2.0",
-    organism="Rhesus macaque",
-    scientificName="Macaca mulatta",
-    twoBitPath=f"{data_dir}/T2T-MMU8v2.0.2bit",
-    chromSizes=f"{data_dir}/T2T-MMU8v2.0.fasta.sizes",
-    defaultPos="chr1:0-100000",
-    orderKey=1,
-    description="T2T-MMU8v2.0 (Rhesus macaque)",
+    genome="GCA_049350105.2",
     htmlPath=f"{data_dir}/description.html",
 )
 hub.add_genome(genome_v2)
@@ -110,55 +103,6 @@ trackDb_map = bigtrack.TrackDb(
 genome_v2.add_trackDb(trackDb_map)
 
 # make tracks
-track_ideogram = bigtrack.Track(
-    track="cytoBandIdeo",
-    shortLabel="Chromosome Band (Ideogram)",
-    longLabel="Ideogram for Orientation",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.cytobands.bigbed",
-    type="bigBed 4 +",
-    group="map",
-)
-trackDb_map.add_track(track_ideogram)
-
-track_base_percent = bigtrack.CompositeTrack(
-    track="base_pct",
-    shortLabel="Base percent",
-    longLabel="Base percent",
-    type="bigWig 0 100",
-    group="map",
-    visibility="full",
-    autoScale="Off",
-    maxHeightPixels="128:36:16",
-    graphTypeDefault="Bar",
-    gridDefault="OFF",
-    windowingFunction="Mean",
-    color="0,0,0",
-    altColor="128,128,128",
-    viewLimits="30:70",
-    html=f"{description_dir}/base_percent.html",
-)
-track_gc = bigtrack.Track(
-    track="gc_pct",
-    shortLabel="GC%",
-    longLabel="GC percent in 50-bp windows (%)",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.pct_GC_w50.bigwig",
-    type="bigWig",
-    group="map",
-    visibility="full",
-)
-track_at = bigtrack.Track(
-    track="at_pct",
-    shortLabel="AT%",
-    longLabel="AT percent in 50-bp windows (%)",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.pct_AT_w50.bigwig",
-    type="bigWig",
-    group="map",
-    visibility="hide",
-)
-track_base_percent.add_child(track_gc)
-track_base_percent.add_child(track_at)
-trackDb_map.add_track(track_base_percent)
-
 track_mappability = bigtrack.CompositeTrack(
     track="mappability",
     shortLabel="Mappability",
@@ -246,6 +190,7 @@ for genome, identifier in {
         shortLabel=genome,
         longLabel=f"Chain alignments to {genome} ({identifier}))",
         type=f"bigChain {identifier}",
+        group="map",
         bigDataUrl=f"{data_dir}/liftover_chains/ref-T2T-MMU8v2.0_qry-{genome}.swapped.bigchain.bigbed",
         linkDataUrl=f"{data_dir}/liftover_chains/ref-T2T-MMU8v2.0_qry-{genome}.swapped.link.bigbed",
         visibility="pack",
@@ -360,18 +305,6 @@ trackDb_regulation = bigtrack.TrackDb(
 genome_v2.add_trackDb(trackDb_regulation)
 
 # make tracks
-track_cpg = bigtrack.Track(
-    track="cpg_islands",
-    shortLabel="CpG islands",
-    longLabel="CpG islands",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.cpg_islands.bigbed",
-    type="bigBed 4 +",
-    group="regulation",
-    visibility="dense",
-    html=f"{description_dir}/cpg_islands.html",
-)
-trackDb_regulation.add_track(track_cpg)
-
 track_methylation = bigtrack.SuperTrack(
     track="methylation",
     shortLabel="Methylation",
@@ -394,17 +327,15 @@ track_methylated_cpgs = bigtrack.Track(
     gridDefault="OFF",
     windowingFunction="Mean",
     viewLimits="0:100",
-    html=f"{description_dir}/methylation-dorado.html",
 )
 track_bigmethyl = bigtrack.Track(
     track="cpg_bigmethyl",
-    shortLabel="DNA methylation",
-    longLabel="DNA methylation, ONT R10.4.1, traditional preset",
+    shortLabel="CpG methylation",
+    longLabel="CpG methylation, ONT R10.4.1, traditional preset",
     bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.AXM.Nanopore_R10.ge5.bigMethyl",
     type="bigMethyl",
     group="regulation",
     visibility="hide",
-    html=f"{description_dir}/methylation-dorado_bigmethyl.html",
 )
 track_methylation.add_child(track_methylated_cpgs)
 track_methylation.add_child(track_bigmethyl)
@@ -574,18 +505,6 @@ track_rdna = bigtrack.Track(
 )
 trackDb_varRep.add_track(track_rdna)
 
-track_windowmasker = bigtrack.Track(
-    track="windowmasker",
-    shortLabel="WindowMasker + SDust",
-    longLabel="Genomic intervals masked by WindowMasker + SDust",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.windowmasker_SDust.bigbed",
-    type="bigBed 3",
-    group="varRep",
-    visibility="hide",
-    html=f"{description_dir}/windowmasker_sdust.html",
-)
-trackDb_varRep.add_track(track_windowmasker)
-
 track_longdust = bigtrack.Track(
     track="longdust",
     shortLabel="LongDust",
@@ -597,18 +516,6 @@ track_longdust = bigtrack.Track(
     html=f"{description_dir}/longdust.html",
 )
 trackDb_varRep.add_track(track_longdust)
-
-track_trf = bigtrack.Track(
-    track="trf",
-    shortLabel="Tandem repeats",
-    longLabel="Simple tandem repeats by TRF",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.TRF_motifs.bigbed",
-    type="bigBed 4",
-    group="varRep",
-    visibility="hide",
-    html=f"{description_dir}/tandem_repeats-trf.html",
-)
-trackDb_varRep.add_track(track_trf)
 
 track_sd = bigtrack.Track(
     track="sd",
@@ -635,19 +542,6 @@ track_numt = bigtrack.Track(
     html=f"{description_dir}/numt.html",
 )
 trackDb_varRep.add_track(track_numt)
-
-track_repeatmasker = bigtrack.Track(
-    track="repeatmasker",
-    shortLabel="RepeatMasker",
-    longLabel="RepeatMasker repetitive elements",
-    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.RepeatMasker-4.1.9.Dfam-3.9_full.RepeatModeler.bigbed",
-    type="bigRmsk",
-    visibility="pack",
-    group="varRep",
-    maxWindowToDraw=5000000,
-    html=f"{description_dir}/repeatmasker.html",
-)
-trackDb_varRep.add_track(track_repeatmasker)
 
 track_satr = bigtrack.CompositeTrack(
     track="satr",
@@ -731,14 +625,7 @@ data_dir = "https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1"
 #################################################
 
 genome_v11 = bigtrack.Genome(
-    genome="T2T-MFA8v1.1",
-    organism="Crab-eating macaque",
-    scientificName="Macaca fascicularis",
-    twoBitPath=f"{data_dir}/T2T-MFA8v1.1.2bit",
-    chromSizes=f"{data_dir}/T2T-MFA8v1.1.fasta.sizes",
-    defaultPos="chr1:0-100000",
-    orderKey=2,
-    description="T2T-MFA8v1.1 (Crab-eating macaque)",
+    genome="GCF_037993035.2",
     htmlPath=f"{data_dir}/description.html",
 )
 hub.add_genome(genome_v11)
@@ -809,55 +696,6 @@ trackDb_map = bigtrack.TrackDb(
 genome_v11.add_trackDb(trackDb_map)
 
 # make tracks
-track_ideogram = bigtrack.Track(
-    track="cytoBandIdeo",
-    shortLabel="Chromosome Band (Ideogram)",
-    longLabel="Ideogram for Orientation",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.cytobands.bigbed",
-    type="bigBed 4 +",
-    group="map",
-)
-trackDb_map.add_track(track_ideogram)
-
-track_base_percent = bigtrack.CompositeTrack(
-    track="base_pct",
-    shortLabel="Base percent",
-    longLabel="Base percent",
-    type="bigWig 0 100",
-    group="map",
-    visibility="full",
-    autoScale="Off",
-    maxHeightPixels="128:36:16",
-    graphTypeDefault="Bar",
-    gridDefault="OFF",
-    windowingFunction="Mean",
-    color="0,0,0",
-    altColor="128,128,128",
-    viewLimits="30:70",
-    html=f"{description_dir}/base_percent.html",
-)
-track_gc = bigtrack.Track(
-    track="gc_pct",
-    shortLabel="GC%",
-    longLabel="GC percent in 50-bp windows (%)",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.pct_GC_w50.bigwig",
-    type="bigWig",
-    group="map",
-    visibility="full",
-)
-track_at = bigtrack.Track(
-    track="at_pct",
-    shortLabel="AT%",
-    longLabel="AT percent in 50-bp windows (%)",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.pct_AT_w50.bigwig",
-    type="bigWig",
-    group="map",
-    visibility="hide",
-)
-track_base_percent.add_child(track_gc)
-track_base_percent.add_child(track_at)
-trackDb_map.add_track(track_base_percent)
-
 track_mappability = bigtrack.CompositeTrack(
     track="mappability",
     shortLabel="Mappability",
@@ -956,24 +794,6 @@ trackDb_genes = bigtrack.TrackDb(
 genome_v11.add_trackDb(trackDb_genes)
 
 # make tracks
-track_refseq = bigtrack.Track(
-    track="refseq",
-    shortLabel="NCBI RefSeq 2025/03",
-    longLabel="NCBI RefSeq (GCF_037993035.2-RS_2025_03)",
-    type="bigGenePred",
-    group="genes",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.RefSeq_GCF_037993035.2-RS_2025_03.bigBed",
-    itemRgb="On",
-    visibility="pack",
-    baseColorDefault="genomicCodons",
-    labelFields="name2,name",
-    defaultLabelFields="name2,name",
-    searchIndex="name,geneName,geneName2",
-    searchTrix=f"{data_dir}/T2T-MFA8v1.1.RefSeq_GCF_037993035.2-RS_2025_03.ix",
-    html=f"{description_dir}/gene_annotation-ncbi_refseq.html",
-)
-trackDb_genes.add_track(track_refseq)
-
 track_liftoff_mmul_10 = bigtrack.Track(
     track="liftoff_mmul_10",
     shortLabel="Liftoff Mmul_10 RefSeq",
@@ -992,24 +812,6 @@ track_liftoff_mmul_10 = bigtrack.Track(
 )
 trackDb_genes.add_track(track_liftoff_mmul_10)
 
-track_curated = bigtrack.Track(
-    track="curated_annotation",
-    shortLabel="Curated gene annotation",
-    longLabel="Curated gene annotation",
-    type="bigGenePred",
-    group="genes",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.curated_gene_annotation_v1.0.bigBed",
-    itemRgb="On",
-    visibility="hide",
-    baseColorDefault="genomicCodons",
-    labelFields="name2,name",
-    defaultLabelFields="name2,name",
-    searchIndex="name,geneName,geneName2",
-    searchTrix=f"{data_dir}/T2T-MFA8v1.1.curated_gene_annotation_v1.0.ix",
-    html=f"{description_dir}/gene_annotation-curated.html",
-)
-trackDb_genes.add_track(track_curated)
-
 
 #################################################
 # Expression and Regulation
@@ -1022,18 +824,6 @@ trackDb_regulation = bigtrack.TrackDb(
 genome_v11.add_trackDb(trackDb_regulation)
 
 # make tracks
-track_cpg = bigtrack.Track(
-    track="cpg_islands",
-    shortLabel="CpG islands",
-    longLabel="CpG islands",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.CpG_islands.bigbed",
-    type="bigBed 4 +",
-    group="regulation",
-    visibility="dense",
-    html=f"{description_dir}/cpg_islands.html",
-)
-trackDb_regulation.add_track(track_cpg)
-
 track_methylation = bigtrack.SuperTrack(
     track="methylation",
     shortLabel="Methylation",
@@ -1167,18 +957,6 @@ track_microsatellites.add_child(track_microsatellites_GC)
 track_microsatellites.add_child(track_microsatellites_AT)
 trackDb_varRep.add_track(track_microsatellites)
 
-track_windowmasker = bigtrack.Track(
-    track="windowmasker",
-    shortLabel="WindowMasker + SDust",
-    longLabel="Genomic intervals masked by WindowMasker + SDust",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.WindowMasker.bigbed",
-    type="bigBed 3",
-    group="varRep",
-    visibility="hide",
-    html=f"{description_dir}/windowmasker_sdust.html",
-)
-trackDb_varRep.add_track(track_windowmasker)
-
 track_longdust = bigtrack.Track(
     track="longdust",
     shortLabel="LongDust",
@@ -1190,18 +968,6 @@ track_longdust = bigtrack.Track(
     html=f"{description_dir}/longdust.html",
 )
 trackDb_varRep.add_track(track_longdust)
-
-track_trf = bigtrack.Track(
-    track="trf",
-    shortLabel="Tandem repeats",
-    longLabel="Simple tandem repeats by TRF",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.TRF_motifs.bigbed",
-    type="bigBed 4",
-    group="varRep",
-    visibility="hide",
-    html=f"{description_dir}/tandem_repeats-trf.html",
-)
-trackDb_varRep.add_track(track_trf)
 
 track_sd = bigtrack.Track(
     track="sd",
@@ -1228,19 +994,6 @@ track_numt = bigtrack.Track(
     html=f"{description_dir}/numt.html",
 )
 trackDb_varRep.add_track(track_numt)
-
-track_repeatmasker = bigtrack.Track(
-    track="repeatmasker",
-    shortLabel="RepeatMasker",
-    longLabel="RepeatMasker repetitive elements",
-    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.RepeatMasker.bigbed",
-    type="bigRmsk",
-    visibility="pack",
-    group="varRep",
-    maxWindowToDraw=5000000,
-    html=f"{description_dir}/repeatmasker.html",
-)
-trackDb_varRep.add_track(track_repeatmasker)
 
 track_cnv_mfa = bigtrack.CompositeTrack(
     track="cnv_mfa",

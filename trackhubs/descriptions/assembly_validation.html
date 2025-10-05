@@ -3,5 +3,17 @@
     Tracks used for assembly validation.
 </p>
 
+<h2>Methods</h2>
+<p>
+    PacBio HiFi reads were aligned to the assembly using 
+    <a href="https://github.com/lh3/minimap2">minimap2</a> with the parameters 
+    <code>-x lr:hq --secondary=no</code>. Oxford Nanopore (ONT) reads were aligned using 
+    <a href="https://github.com/marbl/winnowmap">winnowmap</a> with the parameters 
+    <code>-x map-ont --secondary=no</code>. Alignments were subsequently filtered with 
+    <a href="https://github.com/samtools/samtools">samtools</a> to retain reads with 
+    mapping quality <code>MQ &gt;= 1</code> and to remove alignments with 
+    flag <code>3840</code>.
+</p>
+
 <h2>Contact</h2>
 <a href="mailto:shilong.zhang@sjtu.edu.cn">Shilong Zhang</a>

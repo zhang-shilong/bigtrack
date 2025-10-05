@@ -5,7 +5,12 @@
 
 <h2>Methods</h2>
 <p>
-    Assemblies were aligned with <a href="https://github.com/lh3/minimap2">minimap2</a> and then converted to chain format using <a href="https://github.com/informationsea/transanno">transanno</a> <code>minimap2chain</code>.
+    Assemblies were aligned with <a href="https://github.com/lh3/minimap2">minimap2</a>. 
+    For intra-species alignments, minimap2 was run with <code>-x asm5 --secondary=no</code>. 
+    For inter-species alignments, minimap2 was run with 
+    <code>-x asm20 --eqx -c --cs -k 15 -m 10 -A 1 -B 2 -O2,12 -n2 -g 100 -r 200,100000 --secondary=no -s 1000</code>. 
+    The results were converted into chain format using 
+    <a href="https://github.com/informationsea/transanno">transanno</a> <code>minimap2chain</code>.
 </p>
 
 <h2>Contact</h2>

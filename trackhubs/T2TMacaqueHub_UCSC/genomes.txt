@@ -1,0 +1,10 @@
+genome GCA_049350105.2
+trackDb GCA_049350105.2/trackDb.txt
+groups GCA_049350105.2/groups.txt
+htmlPath https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/description.html
+
+genome GCF_037993035.2
+trackDb GCF_037993035.2/trackDb.txt
+groups GCF_037993035.2/groups.txt
+htmlPath https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/description.html
+

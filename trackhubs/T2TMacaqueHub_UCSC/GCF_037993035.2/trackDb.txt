@@ -1,0 +1,10 @@
+include trackDb_map.txt
+
+include trackDb_genes.txt
+
+include trackDb_regulation.txt
+
+include trackDb_compGeno.txt
+
+include trackDb_varRep.txt
+

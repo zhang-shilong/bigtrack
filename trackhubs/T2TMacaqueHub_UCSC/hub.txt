@@ -1,0 +1,7 @@
+hub T2TMacaqueHub_UCSC
+shortLabel T2T Macaque Hub
+longLabel T2T Macaque Hub
+genomesFile genomes.txt
+email shilong.zhang@sjtu.edu.cn
+descriptionUrl description.html
+

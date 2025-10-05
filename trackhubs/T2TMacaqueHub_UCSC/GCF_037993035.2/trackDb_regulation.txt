@@ -1,12 +1,3 @@
-track cpg_islands
-shortLabel CpG islands
-longLabel CpG islands
-type bigBed 4 +
-bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.CpG_islands.bigbed
-group regulation
-visibility dense
-html https://synplotter.sjtu.edu.cn/disk2/descriptions/cpg_islands.html
-
 track methylation
 superTrack on show
 shortLabel Methylation
