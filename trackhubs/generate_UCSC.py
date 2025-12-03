@@ -103,6 +103,16 @@ trackDb_map = bigtrack.TrackDb(
 genome_v2.add_trackDb(trackDb_map)
 
 # make tracks
+track_ideogram = bigtrack.Track(
+    track="cytoBandIdeo",
+    shortLabel="Chromosome Band",
+    longLabel="Ideogram for Orientation",
+    bigDataUrl=f"{data_dir}/T2T-MMU8v2.0.cytobands.bigbed",
+    type="bigBed 4 +",
+    group="map",
+)
+trackDb_map.add_track(track_ideogram)
+
 track_mappability = bigtrack.CompositeTrack(
     track="mappability",
     shortLabel="Mappability",
@@ -696,6 +706,16 @@ trackDb_map = bigtrack.TrackDb(
 genome_v11.add_trackDb(trackDb_map)
 
 # make tracks
+track_ideogram = bigtrack.Track(
+    track="cytoBandIdeo",
+    shortLabel="Chromosome Band",
+    longLabel="Ideogram for Orientation",
+    bigDataUrl=f"{data_dir}/T2T-MFA8v1.1.cytobands.bigbed",
+    type="bigBed 4 +",
+    group="map",
+)
+trackDb_map.add_track(track_ideogram)
+
 track_mappability = bigtrack.CompositeTrack(
     track="mappability",
     shortLabel="Mappability",

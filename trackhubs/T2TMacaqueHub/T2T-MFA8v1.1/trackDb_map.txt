@@ -1,5 +1,5 @@
 track cytoBandIdeo
-shortLabel Chromosome Band (Ideogram)
+shortLabel Chromosome Band
 longLabel Ideogram for Orientation
 type bigBed 4 +
 bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/T2T-MFA8v1.1.cytobands.bigbed
