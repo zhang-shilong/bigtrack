@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+import glob
 import bigtrack
 
 
@@ -312,6 +314,24 @@ trackDb_genes = bigtrack.TrackDb(
 genome_v2.add_trackDb(trackDb_genes)
 
 # make tracks
+track_refseq = bigtrack.Track(
+    track="refseq_202508",
+    shortLabel="RefSeq 202508",
+    longLabel="NCBI RefSeq GCF_049350105.2-RS_2025_08",
+    type="bigGenePred",
+    group="genes",
+    bigDataUrl=f"{data_dir}/GCF_049350105.2-RS_2025_08.bigBed",
+    itemRgb="On",
+    visibility="pack",
+    baseColorDefault="genomicCodons",
+    labelFields="name2,name",
+    defaultLabelFields="name2,name",
+    searchIndex="name,geneName,geneName2",
+    searchTrix=f"{data_dir}/GCF_049350105.2-RS_2025_08.ix",
+    html=f"{description_dir}/gene_annotation-ncbi_refseq.html",
+)
+trackDb_genes.add_track(track_refseq)
+
 track_liftoff_mfa8 = bigtrack.Track(
     track="liftoff_mfa8",
     shortLabel="Liftoff T2T-MFA8v1.1 RefSeq",
@@ -1060,6 +1080,32 @@ track_methylated_cpgs = bigtrack.Track(
 track_methylation.add_child(track_methylated_cpgs)
 trackDb_regulation.add_track(track_methylation)
 
+track_isoseq = bigtrack.SuperTrack(
+    track="isoseq_alignments",
+    shortLabel="Iso-seq alignments",
+    longLabel="Iso-seq alignments",
+    type="bam",
+    group="regulation",
+)
+for file in sorted(glob.glob(os.path.expanduser("~/gits/T2T-MFA8/data/release_v1.1/Iso-Seq_alignment/*.bam"))):
+    filename = os.path.basename(file)
+    prefix = filename.replace("_FLNC.bam", "")
+    sample, tissue = prefix.split("_", 1)
+    child = bigtrack.Track(
+        track=f"isoseq_{sample}_{tissue}",
+        shortLabel=f"{sample} {tissue} FLNC",
+        longLabel=f"Iso-seq alignment {sample} {tissue} FLNC",
+        type="bam",
+        bigDataUrl=f"{data_dir}/Iso-Seq_alignment/{filename}",
+        visibility="pack",
+        itemRgb="On",
+        minAliQual=30,
+        bamColorMode="strand",
+        doWiggle="off",
+    )
+    track_isoseq.add_child(child)
+trackDb_regulation.add_track(track_isoseq)
+
 
 #################################################
 # Comparative Genomics
@@ -1242,40 +1288,70 @@ track_repeatmasker = bigtrack.Track(
 )
 trackDb_varRep.add_track(track_repeatmasker)
 
-track_cnv_mfa = bigtrack.CompositeTrack(
-    track="cnv_mfa",
-    shortLabel="CN of crab-eating macaques",
-    longLabel="Copy number estimation for crab-eating macaques",
+track_cnv_mfa_wssd = bigtrack.CompositeTrack(
+    track="cnv_mfa_wssd",
+    shortLabel="MFA CN WSSD",
+    longLabel="Copy number estimates (WSSD) of crab-eating macaques",
     type="bigBed 9",
     group="varRep",
     itemRgb="On",
     html=f"{description_dir}/cnv-fastcn.html",
 )
-for sample in ["MFA0214", "MFA157", "MFA683", "MFA0251", "MFA16", "MFA746", "MFA0334", "MFA160135", "MFA768", "MFA0345", "MFA160383", "MFA802", "MFA0347", "MFA160485", "MFA82", "MFA0353", "MFA160563", "MFA825", "MFA0400", "MFA169", "MFA928", "MFA0464", "MFA173", "MFA96", "MFA0486", "MFA186", "MFA962", "MFA0497", "MFA186ZAI", "MFA963", "MFA0505", "MFA191", "MFA964", "MFA0522", "MFA2", "MFA965", "MFA0713", "MFA237", "MFA966", "MFA080", "MFA289", "MFA970", "MFA10", "MFA336", "MFA971", "MFA1000", "MFA344", "MFA972", "MFA1001", "MFA355", "MFA973", "MFA1003", "MFA362", "MFA974", "MFA1004", "MFA380", "MFA975", "MFA1005", "MFA395", "MFA976", "MFA1006", "MFA444", "MFA978", "MFA1007", "MFA454", "MFA980", "MFA1008", "MFA457", "MFA981", "MFA1010", "MFA469", "MFA982", "MFA1011", "MFA494", "MFA983", "MFA1012", "MFA513", "MFA985", "MFA1013", "MFA521", "MFA986", "MFA1014", "MFA53", "MFA987", "MFA1015", "MFA534", "MFA988", "MFA1016", "MFA535", "MFA989", "MFA1017", "MFA556", "MFA990", "MFA1021", "MFA565", "MFA991", "MFA1022", "MFA566", "MFA992", "MFA1023", "MFA582-1", "MFA993", "MFA1024", "MFA610", "MFA994", "MFA1025", "MFA615", "MFA995", "MFA1028", "MFA617", "MFA997", "MFA12", "MFA634", "MFA998", "MFA13", "MFA676", "MFA999"]:
+for sample in ["MFA0214", "MFA157", "MFA683", "MFA0251", "MFA16", "MFA746", "MFA0334", "MFA160135", "MFA768", "MFA0345", "MFA160383", "MFA802", "MFA0347", "MFA160485", "MFA82", "MFA0353", "MFA160563", "MFA825", "MFA0400", "MFA169", "MFA928", "MFA0464", "MFA173", "MFA96", "MFA0486", "MFA186", "MFA962", "MFA0497", "MFA186ZAI", "MFA963", "MFA0505", "MFA191", "MFA964", "MFA0522", "MFA2", "MFA965", "MFA0713", "MFA237", "MFA966", "MFA080", "MFA289", "MFA970", "MFA10", "MFA336", "MFA971", "MFA1000", "MFA344", "MFA972", "MFA1001", "MFA355", "MFA973", "MFA1003", "MFA362", "MFA974", "MFA1004", "MFA380", "MFA975", "MFA1005", "MFA395", "MFA976", "MFA1006", "MFA444", "MFA978", "MFA1007", "MFA454", "MFA980", "MFA1008", "MFA457", "MFA981", "MFA1010", "MFA469", "MFA982", "MFA1011", "MFA494", "MFA983", "MFA1012", "MFA513", "MFA985", "MFA1013", "MFA521", "MFA986", "MFA1014", "MFA53", "MFA987", "MFA1015", "MFA534", "MFA988", "MFA1016", "MFA535", "MFA989", "MFA1017", "MFA556", "MFA990", "MFA1021", "MFA565", "MFA991", "MFA1022", "MFA566", "MFA992", "MFA1023", "MFA993", "MFA1024", "MFA610", "MFA994", "MFA1025", "MFA615", "MFA995", "MFA1028", "MFA617", "MFA997", "MFA12", "MFA634", "MFA998", "MFA13", "MFA676", "MFA999"]:
     child = bigtrack.Track(
-        track=f"cnv_mfa_{sample}",
+        track=f"cnv_mfa_wssd_{sample}",
         shortLabel=f"{sample} CN WSSD",
         longLabel=f"{sample} CN WSSD",
-        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MFA_CN/T2T-MFA8v1.1.{sample}.bigbed",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MFA_CN/WSSD/{sample}.bigbed",
         type="bigBed 9",
         group="varRep",
         visibility="dense",
     )
-    track_cnv_mfa.add_child(child)
-trackDb_varRep.add_track(track_cnv_mfa)
+    track_cnv_mfa_wssd.add_child(child)
+trackDb_varRep.add_track(track_cnv_mfa_wssd)
 
-track_cnv_mfa_subset = bigtrack.SampledCompositeTrack(
-    full_track=track_cnv_mfa,
+track_cnv_mfa_wssd_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_mfa_wssd,
     number=20,
-    shortLabel="CN of crab-eating macaques (subset)",
-    longLabel="Copy number estimation for crab-eating macaques (subset)",
+    shortLabel="MFA CN WSSD (subset)",
+    longLabel="Copy number estimates (WSSD) of crab-eating macaques (subset)",
 )
-trackDb_varRep.add_track(track_cnv_mfa_subset)
+trackDb_varRep.add_track(track_cnv_mfa_wssd_subset)
 
-track_cnv_mmu = bigtrack.CompositeTrack(
-    track="cnv_mmu",
-    shortLabel="CN of for rhesus macaques",
-    longLabel="Copy number estimation for rhesus macaques",
+track_cnv_mfa_sunk = bigtrack.CompositeTrack(
+    track="cnv_mfa_sunk",
+    shortLabel="MFA CN SUNK",
+    longLabel="Copy number estimates (SUNK) of crab-eating macaques",
+    type="bigBed 9",
+    group="varRep",
+    itemRgb="On",
+    html=f"{description_dir}/cnv-fastcn.html",
+)
+for sample in ["MFA0214", "MFA157", "MFA683", "MFA0251", "MFA16", "MFA746", "MFA0334", "MFA160135", "MFA768", "MFA0345", "MFA160383", "MFA802", "MFA0347", "MFA160485", "MFA82", "MFA0353", "MFA160563", "MFA825", "MFA0400", "MFA169", "MFA928", "MFA0464", "MFA173", "MFA96", "MFA0486", "MFA186", "MFA962", "MFA0497", "MFA186ZAI", "MFA963", "MFA0505", "MFA191", "MFA964", "MFA0522", "MFA2", "MFA965", "MFA0713", "MFA237", "MFA966", "MFA080", "MFA289", "MFA970", "MFA10", "MFA336", "MFA971", "MFA1000", "MFA344", "MFA972", "MFA1001", "MFA355", "MFA973", "MFA1003", "MFA362", "MFA974", "MFA1004", "MFA380", "MFA975", "MFA1005", "MFA395", "MFA976", "MFA1006", "MFA444", "MFA978", "MFA1007", "MFA454", "MFA980", "MFA1008", "MFA457", "MFA981", "MFA1010", "MFA469", "MFA982", "MFA1011", "MFA494", "MFA983", "MFA1012", "MFA513", "MFA985", "MFA1013", "MFA521", "MFA986", "MFA1014", "MFA53", "MFA987", "MFA1015", "MFA534", "MFA988", "MFA1016", "MFA535", "MFA989", "MFA1017", "MFA556", "MFA990", "MFA1021", "MFA565", "MFA991", "MFA1022", "MFA566", "MFA992", "MFA1023", "MFA993", "MFA1024", "MFA610", "MFA994", "MFA1025", "MFA615", "MFA995", "MFA1028", "MFA617", "MFA997", "MFA12", "MFA634", "MFA998", "MFA13", "MFA676", "MFA999"]:
+    child = bigtrack.Track(
+        track=f"cnv_mfa_sunk_{sample}",
+        shortLabel=f"{sample} CN SUNK",
+        longLabel=f"{sample} CN SUNK",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MFA_CN/SUNK/{sample}.bigbed",
+        type="bigBed 9",
+        group="varRep",
+        visibility="dense",
+    )
+    track_cnv_mfa_sunk.add_child(child)
+trackDb_varRep.add_track(track_cnv_mfa_sunk)
+
+track_cnv_mfa_sunk_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_mfa_sunk,
+    number=20,
+    shortLabel="MFA CN SUNK (subset)",
+    longLabel="Copy number estimates (SUNK) of crab-eating macaques (subset)",
+)
+trackDb_varRep.add_track(track_cnv_mfa_sunk_subset)
+
+track_cnv_mmu_wssd = bigtrack.CompositeTrack(
+    track="cnv_mmu_wssd",
+    shortLabel="MMU CN WSSD",
+    longLabel="Copy number estimates (WSSD) of rhesus macaques",
     type="bigBed 9",
     group="varRep",
     itemRgb="On",
@@ -1283,29 +1359,59 @@ track_cnv_mmu = bigtrack.CompositeTrack(
 )
 for sample in ["MMU0595", "MMU5029", "MMU5131", "MMU0715", "MMU5046", "MMU5136", "MMU0756", "MMU5049", "MMU5139", "MMU1003063", "MMU5050", "MMU5141", "MMU1005159", "MMU5059", "MMU5142", "MMU1005163", "MMU5062", "MMU5149", "MMU1205169", "MMU5063", "MMU5150", "MMU2019108-1", "MMU5066", "MMU5187", "MMU5001", "MMU5073", "MMU5202", "MMU5003", "MMU5076", "MMU5204", "MMU5018", "MMU5085", "MMU5205", "MMU5023", "MMU5115", "MMU5206"]:
     child = bigtrack.Track(
-        track=f"cnv_mmu_{sample}",
+        track=f"cnv_mmu_wssd_{sample}",
         shortLabel=f"{sample} CN WSSD",
         longLabel=f"{sample} CN WSSD",
-        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MMU_CN/T2T-MFA8v1.1.{sample}.bigbed",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MMU_CN/WSSD/{sample}.bigbed",
         type="bigBed 9",
         group="varRep",
         visibility="dense",
     )
-    track_cnv_mmu.add_child(child)
-trackDb_varRep.add_track(track_cnv_mmu)
+    track_cnv_mmu_wssd.add_child(child)
+trackDb_varRep.add_track(track_cnv_mmu_wssd)
 
-track_cnv_mmu_subset = bigtrack.SampledCompositeTrack(
-    full_track=track_cnv_mmu,
+track_cnv_mmu_wssd_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_mmu_wssd,
     number=20,
-    shortLabel="CN of for rhesus macaques (subset)",
-    longLabel="Copy number estimation for rhesus macaques (subset)",
+    shortLabel="MMU CN WSSD (subset)",
+    longLabel="Copy number estimates (WSSD) of rhesus macaques (subset)",
 )
-trackDb_varRep.add_track(track_cnv_mmu_subset)
+trackDb_varRep.add_track(track_cnv_mmu_wssd_subset)
 
-track_cnv_1kgp = bigtrack.CompositeTrack(
-    track="cnv_1kgp",
-    shortLabel="CN of human populations in 1KGP",
-    longLabel="Copy number estimation for human populations in 1KGP",
+track_cnv_mmu_sunk = bigtrack.CompositeTrack(
+    track="cnv_mmu_sunk",
+    shortLabel="MMU CN SUNK",
+    longLabel="Copy number estimates (SUNK) of rhesus macaques",
+    type="bigBed 9",
+    group="varRep",
+    itemRgb="On",
+    html=f"{description_dir}/cnv-fastcn.html",
+)
+for sample in ["MMU0595", "MMU5029", "MMU5131", "MMU0715", "MMU5046", "MMU5136", "MMU0756", "MMU5049", "MMU5139", "MMU1003063", "MMU5050", "MMU5141", "MMU1005159", "MMU5059", "MMU5142", "MMU1005163", "MMU5062", "MMU5149", "MMU1205169", "MMU5063", "MMU5150", "MMU2019108-1", "MMU5066", "MMU5187", "MMU5001", "MMU5073", "MMU5202", "MMU5003", "MMU5076", "MMU5204", "MMU5018", "MMU5085", "MMU5205", "MMU5023", "MMU5115", "MMU5206"]:
+    child = bigtrack.Track(
+        track=f"cnv_mmu_sunk_{sample}",
+        shortLabel=f"{sample} CN SUNK",
+        longLabel=f"{sample} CN SUNK",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.MMU_CN/SUNK/{sample}.bigbed",
+        type="bigBed 9",
+        group="varRep",
+        visibility="dense",
+    )
+    track_cnv_mmu_sunk.add_child(child)
+trackDb_varRep.add_track(track_cnv_mmu_sunk)
+
+track_cnv_mmu_sunk_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_mmu_sunk,
+    number=20,
+    shortLabel="MMU CN SUNK (subset)",
+    longLabel="Copy number estimates (SUNK) of rhesus macaques (subset)",
+)
+trackDb_varRep.add_track(track_cnv_mmu_sunk_subset)
+
+track_cnv_1kgp_wssd = bigtrack.CompositeTrack(
+    track="cnv_1kgp_wssd",
+    shortLabel="1KGP CN WSSD",
+    longLabel="Copy number estimates (WSSD) of human populations in 1KGP",
     type="bigBed 9",
     group="varRep",
     itemRgb="On",
@@ -1313,24 +1419,54 @@ track_cnv_1kgp = bigtrack.CompositeTrack(
 )
 for sample in ["HG00096", "HG01137", "HG02654", "NA07051", "NA19704", "HG00097", "HG01500", "HG02655", "NA07347", "NA19707", "HG00099", "HG01501", "HG02922", "NA07357", "NA19711", "HG00100", "HG01503", "HG02923", "NA18486", "NA19712", "HG00101", "HG01504", "HG02943", "NA18489", "NA20502", "HG00102", "HG01506", "HG02944", "NA18498", "NA20503", "HG00103", "HG01507", "HG02973", "NA18499", "NA20504", "HG00105", "HG01509", "HG02974", "NA18501", "NA20505", "HG00171", "HG01510", "HG03006", "NA18502", "NA20506", "HG00173", "HG01565", "HG03007", "NA18504", "NA20507", "HG00174", "HG01566", "HG03052", "NA18505", "NA20508", "HG00176", "HG01571", "HG03057", "NA18526", "NA20509", "HG00177", "HG01572", "HG03058", "NA18532", "NA20845", "HG00178", "HG01577", "HG03078", "NA18537", "NA20846", "HG00179", "HG01578", "HG03084", "NA18542", "NA20847", "HG00180", "HG01882", "HG03085", "NA18545", "NA20849", "HG00442", "HG01883", "HG03096", "NA18547", "NA20850", "HG00443", "HG01885", "HG03097", "NA18550", "NA20851", "HG00445", "HG01886", "HG03099", "NA18552", "NA20852", "HG00446", "HG01889", "HG03100", "NA18940", "NA20853", "HG00448", "HG01890", "HG03615", "NA18942", "HG00449", "HG01917", "HG03616", "NA18943", "HG00451", "HG01918", "HG03642", "NA18944", "HG00452", "HG01956", "HG03643", "NA18945", "HG00553", "HG02014", "HG03644", "NA18947", "HG00554", "HG02016", "HG03673", "NA18948", "HG00637", "HG02017", "HG03679", "NA18949", "HG00638", "HG02019", "HG03684", "NA19017", "HG00640", "HG02020", "HG03713", "NA19019", "HG00641", "HG02023", "HG03714", "NA19020", "HG00731", "HG02025", "HG03716", "NA19023", "HG00732", "HG02026", "HG03717", "NA19024", "HG00759", "HG02029", "HG03722", "NA19025", "HG00766", "HG02461", "HG03727", "NA19026", "HG00844", "HG02462", "HG03729", "NA19027", "HG00851", "HG02464", "HG03730", "NA19625", "HG00864", "HG02465", "HG03793", "NA19648", "HG00867", "HG02490", "HG03796", "NA19649", "HG00879", "HG02491", "HG03800", "NA19651", "HG00881", "HG02561", "HG03803", "NA19652", "HG01112", "HG02562", "HG03885", "NA19654", "HG01113", "HG02570", "HG03886", "NA19655", "HG01124", "HG02571", "NA06985", "NA19657", "HG01125", "HG02600", "NA06986", "NA19658", "HG01133", "HG02601", "NA06994", "NA19700", "HG01134", "HG02603", "NA07000", "NA19701", "HG01136", "HG02604", "NA07037", "NA19703"]:
     child = bigtrack.Track(
-        track=f"cnv_1kgp_{sample}",
+        track=f"cnv_1kgp_wssd_{sample}",
         shortLabel=f"{sample} CN WSSD",
         longLabel=f"{sample} CN WSSD",
-        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.1KGP_CN/T2T-MFA8v1.1.{sample}.bigbed",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.1KGP_CN/WSSD/{sample}.bigbed",
         type="bigBed 9",
         group="varRep",
         visibility="dense",
     )
-    track_cnv_1kgp.add_child(child)
-trackDb_varRep.add_track(track_cnv_1kgp)
+    track_cnv_1kgp_wssd.add_child(child)
+trackDb_varRep.add_track(track_cnv_1kgp_wssd)
 
-track_cnv_1kgp_subset = bigtrack.SampledCompositeTrack(
-    full_track=track_cnv_1kgp,
+track_cnv_1kgp_wssd_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_1kgp_wssd,
     number=20,
-    shortLabel="CN of human populations in 1KGP (subset)",
-    longLabel="Copy number estimation for human populations in 1KGP (subset)",
+    shortLabel="1KGP CN WSSD (subset)",
+    longLabel="Copy number estimates (WSSD) of human populations in 1KGP (subset)",
 )
-trackDb_varRep.add_track(track_cnv_1kgp_subset)
+trackDb_varRep.add_track(track_cnv_1kgp_wssd_subset)
+
+track_cnv_1kgp_sunk = bigtrack.CompositeTrack(
+    track="cnv_1kgp_sunk",
+    shortLabel="1KGP CN SUNK",
+    longLabel="Copy number estimates (SUNK) of human populations in 1KGP",
+    type="bigBed 9",
+    group="varRep",
+    itemRgb="On",
+    html=f"{description_dir}/cnv-fastcn.html",
+)
+for sample in ["HG00096", "HG01137", "HG02654", "NA07051", "NA19704", "HG00097", "HG01500", "HG02655", "NA07347", "NA19707", "HG00099", "HG01501", "HG02922", "NA07357", "NA19711", "HG00100", "HG01503", "HG02923", "NA18486", "NA19712", "HG00101", "HG01504", "HG02943", "NA18489", "NA20502", "HG00102", "HG01506", "HG02944", "NA18498", "NA20503", "HG00103", "HG01507", "HG02973", "NA18499", "NA20504", "HG00105", "HG01509", "HG02974", "NA18501", "NA20505", "HG00171", "HG01510", "HG03006", "NA18502", "NA20506", "HG00173", "HG01565", "HG03007", "NA18504", "NA20507", "HG00174", "HG01566", "HG03052", "NA18505", "NA20508", "HG00176", "HG01571", "HG03057", "NA18526", "NA20509", "HG00177", "HG01572", "HG03058", "NA18532", "NA20845", "HG00178", "HG01577", "HG03078", "NA18537", "NA20846", "HG00179", "HG01578", "HG03084", "NA18542", "NA20847", "HG00180", "HG01882", "HG03085", "NA18545", "NA20849", "HG00442", "HG01883", "HG03096", "NA18547", "NA20850", "HG00443", "HG01885", "HG03097", "NA18550", "NA20851", "HG00445", "HG01886", "HG03099", "NA18552", "NA20852", "HG00446", "HG01889", "HG03100", "NA18940", "NA20853", "HG00448", "HG01890", "HG03615", "NA18942", "HG00449", "HG01917", "HG03616", "NA18943", "HG00451", "HG01918", "HG03642", "NA18944", "HG00452", "HG01956", "HG03643", "NA18945", "HG00553", "HG02014", "HG03644", "NA18947", "HG00554", "HG02016", "HG03673", "NA18948", "HG00637", "HG02017", "HG03679", "NA18949", "HG00638", "HG02019", "HG03684", "NA19017", "HG00640", "HG02020", "HG03713", "NA19019", "HG00641", "HG02023", "HG03714", "NA19020", "HG00731", "HG02025", "HG03716", "NA19023", "HG00732", "HG02026", "HG03717", "NA19024", "HG00759", "HG02029", "HG03722", "NA19025", "HG00766", "HG02461", "HG03727", "NA19026", "HG00844", "HG02462", "HG03729", "NA19027", "HG00851", "HG02464", "HG03730", "NA19625", "HG00864", "HG02465", "HG03793", "NA19648", "HG00867", "HG02490", "HG03796", "NA19649", "HG00879", "HG02491", "HG03800", "NA19651", "HG00881", "HG02561", "HG03803", "NA19652", "HG01112", "HG02562", "HG03885", "NA19654", "HG01113", "HG02570", "HG03886", "NA19655", "HG01124", "HG02571", "NA06985", "NA19657", "HG01125", "HG02600", "NA06986", "NA19658", "HG01133", "HG02601", "NA06994", "NA19700", "HG01134", "HG02603", "NA07000", "NA19701", "HG01136", "HG02604", "NA07037", "NA19703"]:
+    child = bigtrack.Track(
+        track=f"cnv_1kgp_sunk_{sample}",
+        shortLabel=f"{sample} CN SUNK",
+        longLabel=f"{sample} CN SUNK",
+        bigDataUrl=f"{data_dir}/T2T-MFA8v1.0.1KGP_CN/SUNK/{sample}.bigbed",
+        type="bigBed 9",
+        group="varRep",
+        visibility="dense",
+    )
+    track_cnv_1kgp_sunk.add_child(child)
+trackDb_varRep.add_track(track_cnv_1kgp_sunk)
+
+track_cnv_1kgp_sunk_subset = bigtrack.SampledCompositeTrack(
+    full_track=track_cnv_1kgp_sunk,
+    number=20,
+    shortLabel="1KGP CN SUNK (subset)",
+    longLabel="Copy number estimates (SUNK) of human populations in 1KGP (subset)",
+)
+trackDb_varRep.add_track(track_cnv_1kgp_sunk_subset)
 
 
 #################################################

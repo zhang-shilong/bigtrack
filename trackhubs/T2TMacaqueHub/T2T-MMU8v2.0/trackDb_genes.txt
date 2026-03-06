@@ -1,3 +1,18 @@
+track refseq_202508
+shortLabel RefSeq 202508
+longLabel NCBI RefSeq GCF_049350105.2-RS_2025_08
+type bigGenePred
+group genes
+bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/GCF_049350105.2-RS_2025_08.bigBed
+itemRgb On
+visibility pack
+baseColorDefault genomicCodons
+labelFields name2,name
+defaultLabelFields name2,name
+searchIndex name,geneName,geneName2
+searchTrix https://synplotter.sjtu.edu.cn/disk2/T2T-MMU8/release_v2.0/GCF_049350105.2-RS_2025_08.ix
+html https://synplotter.sjtu.edu.cn/disk2/descriptions/gene_annotation-ncbi_refseq.html
+
 track liftoff_mfa8
 shortLabel Liftoff T2T-MFA8v1.1 RefSeq
 longLabel Liftoff from T2T-MFA8v1.1 (GCF_037993035.2-RS_2025_03)

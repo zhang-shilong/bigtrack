@@ -29,3 +29,370 @@ html https://synplotter.sjtu.edu.cn/disk2/descriptions/methylation-nanopolish.ht
     windowingFunction Mean
     viewLimits 0:100
 
+track isoseq_alignments
+superTrack on
+shortLabel Iso-seq alignments
+longLabel Iso-seq alignments
+type bam
+group regulation
+
+    track isoseq_MFA186ZAI_lung
+    parent isoseq_alignments
+    shortLabel MFA186ZAI lung FLNC
+    longLabel Iso-seq alignment MFA186ZAI lung FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA186ZAI_lung_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA186ZAI_testicle
+    parent isoseq_alignments
+    shortLabel MFA186ZAI testicle FLNC
+    longLabel Iso-seq alignment MFA186ZAI testicle FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA186ZAI_testicle_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_cerebellum
+    parent isoseq_alignments
+    shortLabel MFA676 cerebellum FLNC
+    longLabel Iso-seq alignment MFA676 cerebellum FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_cerebellum_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_heart
+    parent isoseq_alignments
+    shortLabel MFA676 heart FLNC
+    longLabel Iso-seq alignment MFA676 heart FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_heart_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_hippocampus
+    parent isoseq_alignments
+    shortLabel MFA676 hippocampus FLNC
+    longLabel Iso-seq alignment MFA676 hippocampus FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_hippocampus_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_kidney
+    parent isoseq_alignments
+    shortLabel MFA676 kidney FLNC
+    longLabel Iso-seq alignment MFA676 kidney FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_kidney_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_liver
+    parent isoseq_alignments
+    shortLabel MFA676 liver FLNC
+    longLabel Iso-seq alignment MFA676 liver FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_liver_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_muscle
+    parent isoseq_alignments
+    shortLabel MFA676 muscle FLNC
+    longLabel Iso-seq alignment MFA676 muscle FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_muscle_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_ovary
+    parent isoseq_alignments
+    shortLabel MFA676 ovary FLNC
+    longLabel Iso-seq alignment MFA676 ovary FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_ovary_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_prefrontal_cortex
+    parent isoseq_alignments
+    shortLabel MFA676 prefrontal_cortex FLNC
+    longLabel Iso-seq alignment MFA676 prefrontal_cortex FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_prefrontal_cortex_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_spleen
+    parent isoseq_alignments
+    shortLabel MFA676 spleen FLNC
+    longLabel Iso-seq alignment MFA676 spleen FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_spleen_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_striatum
+    parent isoseq_alignments
+    shortLabel MFA676 striatum FLNC
+    longLabel Iso-seq alignment MFA676 striatum FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_striatum_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_thalamus
+    parent isoseq_alignments
+    shortLabel MFA676 thalamus FLNC
+    longLabel Iso-seq alignment MFA676 thalamus FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_thalamus_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA676_visual_cortex
+    parent isoseq_alignments
+    shortLabel MFA676 visual_cortex FLNC
+    longLabel Iso-seq alignment MFA676 visual_cortex FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA676_visual_cortex_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MFA712_blood
+    parent isoseq_alignments
+    shortLabel MFA712 blood FLNC
+    longLabel Iso-seq alignment MFA712 blood FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MFA712_blood_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_blood
+    parent isoseq_alignments
+    shortLabel MMU5027 blood FLNC
+    longLabel Iso-seq alignment MMU5027 blood FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_blood_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_cerebellum
+    parent isoseq_alignments
+    shortLabel MMU5027 cerebellum FLNC
+    longLabel Iso-seq alignment MMU5027 cerebellum FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_cerebellum_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_heart
+    parent isoseq_alignments
+    shortLabel MMU5027 heart FLNC
+    longLabel Iso-seq alignment MMU5027 heart FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_heart_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_hippocampus
+    parent isoseq_alignments
+    shortLabel MMU5027 hippocampus FLNC
+    longLabel Iso-seq alignment MMU5027 hippocampus FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_hippocampus_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_kidney
+    parent isoseq_alignments
+    shortLabel MMU5027 kidney FLNC
+    longLabel Iso-seq alignment MMU5027 kidney FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_kidney_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_liver
+    parent isoseq_alignments
+    shortLabel MMU5027 liver FLNC
+    longLabel Iso-seq alignment MMU5027 liver FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_liver_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_lung
+    parent isoseq_alignments
+    shortLabel MMU5027 lung FLNC
+    longLabel Iso-seq alignment MMU5027 lung FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_lung_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_muscle
+    parent isoseq_alignments
+    shortLabel MMU5027 muscle FLNC
+    longLabel Iso-seq alignment MMU5027 muscle FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_muscle_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_ovary
+    parent isoseq_alignments
+    shortLabel MMU5027 ovary FLNC
+    longLabel Iso-seq alignment MMU5027 ovary FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_ovary_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_prefrontal_cortex
+    parent isoseq_alignments
+    shortLabel MMU5027 prefrontal_cortex FLNC
+    longLabel Iso-seq alignment MMU5027 prefrontal_cortex FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_prefrontal_cortex_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_spleen
+    parent isoseq_alignments
+    shortLabel MMU5027 spleen FLNC
+    longLabel Iso-seq alignment MMU5027 spleen FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_spleen_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_striatum
+    parent isoseq_alignments
+    shortLabel MMU5027 striatum FLNC
+    longLabel Iso-seq alignment MMU5027 striatum FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_striatum_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_thalamus
+    parent isoseq_alignments
+    shortLabel MMU5027 thalamus FLNC
+    longLabel Iso-seq alignment MMU5027 thalamus FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_thalamus_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5027_visual_cortex
+    parent isoseq_alignments
+    shortLabel MMU5027 visual_cortex FLNC
+    longLabel Iso-seq alignment MMU5027 visual_cortex FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5027_visual_cortex_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
+    track isoseq_MMU5108ZAI_testicle
+    parent isoseq_alignments
+    shortLabel MMU5108ZAI testicle FLNC
+    longLabel Iso-seq alignment MMU5108ZAI testicle FLNC
+    type bam
+    bigDataUrl https://synplotter.sjtu.edu.cn/disk2/T2T-MFA8/release_v1.1/Iso-Seq_alignment/MMU5108ZAI_testicle_FLNC.bam
+    visibility pack
+    itemRgb On
+    minAliQual 30
+    bamColorMode strand
+    doWiggle off
+
